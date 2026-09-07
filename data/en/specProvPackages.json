@@ -1,0 +1,20 @@
+{
+  "_source": "ADR 7.2.4 — special provisions concerning the carriage of packages (API field: specProvPackages, Table A column 16)",
+  "v_codes": {
+    "V1": "Packages — only in closed or sheeted vehicles or closed or sheeted containers.",
+    "V2": "Class 1 substances/articles requiring a transport unit with EX/II or EX/III vehicle(s) (choice depending on the quantity limits of 7.5.5.2); trailers meeting EX/II or EX/III requirements may be towed by a vehicle not meeting those requirements; for multimodal transport to/from ports/terminals, EX/II may be used in place of EX/III under conditions of consistency with the IMDG Code/RID/ICAO.",
+    "V3": "Freely flowing powdery substances and fireworks — container floor must be non-metallic or lined with a non-metallic liner.",
+    "V4": "(Reserved)",
+    "V5": "Carriage in small containers prohibited.",
+    "V6": "(Deleted)",
+    "V7": "(Reserved)",
+    "V8": "See 7.1.7 (temperature control) — does not apply to substances of 3.1.2.6 stabilized by inhibition with an SADT >50°C, unless the temperature during carriage could exceed 55°C.",
+    "V9": "(Reserved)",
+    "V10": "IBCs (Intermediate Bulk Containers) — only in closed or sheeted vehicles or closed or sheeted containers.",
+    "V11": "IBCs other than metal or rigid plastics IBCs — only in closed vehicles/containers or sheeted vehicles/containers.",
+    "V12": "IBCs of type 31HZ2 (31HA2/HB2/HN2/HD2/HH2) — only in closed vehicles or closed containers.",
+    "V13": "Substances in bags 5H1/5L1/5M1 — only in closed vehicles or closed containers.",
+    "V14": "Aerosols/gas cartridges for recovery/disposal (provision 327) — only in open or ventilated vehicles/containers.",
+    "V15": "IBCs (Intermediate Bulk Containers) — only in closed vehicles or closed containers."
+  }
+}

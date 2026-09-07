@@ -1,0 +1,9 @@
+{
+  "_source": "ADR 2.1.1.3 (pole API: packingGroup)",
+  "_note": "Dotyczy klas innych niż 1, 2, 5.2, 6.2, 7 oraz materiałów innych niż samoreaktywne klasy 4.1. Przedmioty nie mają grupy pakowania — dla nich wymagania podaje instrukcja pakowania.",
+  "groups": {
+    "I": "Materiały stwarzające duże zagrożenie",
+    "II": "Materiały stwarzające średnie zagrożenie",
+    "III": "Materiały stwarzające małe zagrożenie"
+  }
+}

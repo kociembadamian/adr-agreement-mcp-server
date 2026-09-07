@@ -1,0 +1,32 @@
+{
+  "_source": "ADR 1.1.3.6 (pole API: transportCategory)",
+  "kategorie": {
+    "0": {
+      "limit_na_jednostke_transportowa": 0,
+      "opis": "Materiały/przedmioty o najwyższym ryzyku — praktycznie brak wyłączenia (m.in. klasa 1: 1.1A/1.1L/1.2L/1.3L, UN 0190; klasa 3: UN 3343; klasa 4.2 gr. I; wybrane UN klas 4.3/5.1/6.1/6.2/7/8/9; opakowania próżne nieoczyszczone po tych materiałach, poza UN 2908)."
+    },
+    "1": {
+      "limit_na_jednostke_transportowa": 20,
+      "uwaga": "Dla wybranych UN (0081, 0082, 0084, 0241, 0331, 0332, 0482, 1005, 1017) limit wynosi 50 kg zamiast 20.",
+      "opis": "Materiały/przedmioty I grupy pakowania nienależące do kategorii 0, plus wybrane klasy (1.1B–1.1J, 1.2B–1.2J, 1.3C/G/H/J, 1.5D; klasa 2 grupy T/TC/TO/TF/TOC/TFC; aerozole odpowiednich grup; wybrane UN klas 4.1/5.2)."
+    },
+    "2": {
+      "limit_na_jednostke_transportowa": 333,
+      "opis": "Materiały II grupy pakowania nienależące do kategorii 0/1/4, plus wybrane klasy (1.4B–1.4G, 1.6N; klasa 2 grupa F; aerozole grupy F; wybrane UN klas 4.1/4.3/5.1/5.2/6.1/6.2/9)."
+    },
+    "3": {
+      "limit_na_jednostke_transportowa": 1000,
+      "opis": "Materiały III grupy pakowania nienależące do kategorii 0/2/4, plus wybrane klasy (2 grupy A/O; aerozole A/O; wybrane UN klas 3/4.3/8/9)."
+    },
+    "4": {
+      "limit_na_jednostke_transportowa": "bez ograniczeń",
+      "opis": "M.in. klasa 1.4S; wybrane UN niemal wszystkich klas o niskim ryzyku; opakowania próżne nieoczyszczone po materiałach spoza kategorii 0."
+    }
+  },
+  "reguly": {
+    "jedna_kategoria": "Jeśli wszystkie towary na jednostce transportowej należą do tej samej kategorii — po prostu porównaj sumę ich ilości z limitem tej kategorii (tabela wyżej).",
+    "mieszane_kategorie": "Jeśli towary należą do różnych kategorii, oblicz: (ilość kat.1 × 50) + (ilość kat.1 z przypisem a × 20) + (ilość kat.2 × 3) + (ilość kat.3 × 1) — suma nie może przekroczyć 1000. Kategoria 0 wyklucza to wyłączenie całkowicie (limit 0), kategoria 4 nie wlicza się (brak ograniczeń).",
+    "jednostki_ilosci": "przedmioty: masa netto materiału wybuchowego lub masa przedmiotu w kg; materiały stałe/gazy skroplone/schłodzone/rozpuszczone: masa netto w kg; materiały ciekłe: objętość w litrach; gazy sprężone/zaadsorbowane/chemikalia pod ciśnieniem: pojemność wodna naczynia w litrach.",
+    "efekt_wylaczenia": "Poniżej progu — zwolnienie m.in. z: działu 1.10 (poza wyjątkami), działu 5.3 (nalepki/tablice), 5.4.3, działu 7.2 (poza V5/V8), CV1, dużej części działu 8 i całej części 9."
+  }
+}

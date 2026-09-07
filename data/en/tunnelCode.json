@@ -1,0 +1,29 @@
+{
+  "_source": "ADR Chapter 8.6 (API field: tunnelCode)",
+  "tunnel_categories": {
+    "A": "No restrictions — no sign",
+    "B": "Sign bearing panel \"B\"",
+    "C": "Sign bearing panel \"C\"",
+    "D": "Sign bearing panel \"D\"",
+    "E": "Sign bearing panel \"E\""
+  },
+  "_note_categories": "This is the category of the TUNNEL ITSELF (road sign), not to be confused with the goods' restriction code below — only combining both (the goods' code from Table A × the category of the specific tunnel from the tunnel database) answers 'can this load enter this tunnel'.",
+  "goods_restriction_codes": {
+    "B": "Carriage prohibited through tunnels of categories B, C, D and E.",
+    "B1000C": "Net mass of explosives per transport unit > 1000 kg: prohibited in B/C/D/E. ≤ 1000 kg: prohibited in C/D/E.",
+    "B/D": "Carriage in tanks: prohibited in B/C/D/E. Other carriage: prohibited in D/E.",
+    "B/E": "Carriage in tanks: prohibited in B/C/D/E. Other carriage: prohibited in E.",
+    "C": "Carriage prohibited through tunnels of categories C, D and E.",
+    "C5000D": "Net mass of explosives per transport unit > 5000 kg: prohibited in C/D/E. ≤ 5000 kg: prohibited in D/E.",
+    "C/D": "Carriage in tanks: prohibited in C/D/E. Other carriage: prohibited in D/E.",
+    "C/E": "Carriage in tanks: prohibited in C/D/E. Other carriage: prohibited in E.",
+    "D": "Carriage prohibited through tunnels of categories D and E.",
+    "D/E": "Carriage in bulk or in tanks: prohibited in D/E. Other carriage: prohibited in E.",
+    "E": "Carriage prohibited through tunnels of category E.",
+    "-": "Carriage permitted through all tunnels (exceptions for UN 2919 and UN 3331 — special conditions apply)."
+  },
+  "rules": {
+    "mixed_load": "If a transport unit carries goods with different restriction codes, the code corresponding to the GREATEST restrictions applies to the entire load.",
+    "exemptions_1_1_3_6": "Goods exempted under 1.1.3.6 (see transportCategory) are not subject to tunnel restrictions and are not counted when determining the code for the whole load (except where marking is required under 3.4.13)."
+  }
+}

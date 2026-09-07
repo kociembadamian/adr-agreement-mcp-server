@@ -1,0 +1,12 @@
+{
+  "_source": "ADR 9.1.1.2 (pole API: vehicle)",
+  "typy": {
+    "EX/II": "Pojazd przeznaczony do przewozu materiałów wybuchowych i przedmiotów z materiałami wybuchowymi (klasa 1) — niższa kategoria konstrukcyjna niż EX/III.",
+    "EX/III": "Pojazd przeznaczony do przewozu materiałów wybuchowych i przedmiotów z materiałami wybuchowymi (klasa 1) — wyższa kategoria konstrukcyjna.",
+    "FL": "Pojazd do przewozu: (a) cieczy o temp. zapłonu ≤60°C w cysternach >1m³ / kontenerach-cysternach >3m³, (b) gazów palnych w analogicznych cysternach, (c) pojazd-bateria do gazów palnych >1m³, (d) nadtlenku wodoru >60% (UN 2015) w cysternach >1m³.",
+    "AT": "Pojazd inny niż EX/III, FL, MEMU — do przewozu pozostałych towarów niebezpiecznych w cysternach stałych/odejmowalnych >1m³ lub kontenerach-cysternach/cysternach przenośnych/MEGC >3m³; lub pojazd-bateria (inny niż FL) >1m³.",
+    "MEMU": "Ruchoma jednostka do wytwarzania materiałów wybuchowych."
+  },
+  "uwaga_OX": "Historyczny typ pojazdu OX (do przewozu nadtlenku wodoru) już nieużywany w aktualnej klasyfikacji, ale wciąż mogą istnieć takie pojazdy na rynku — bardzo wąski zakres zastosowania (nadtlenki).",
+  "dopuszczenie": "Zgodność pojazdów EX/II, EX/III, FL, AT i MEMU z częścią 9 ADR potwierdza świadectwo dopuszczenia wydawane przez właściwą władzę państwa rejestracji, ważne max 1 rok, odnawiane po corocznym badaniu technicznym."
+}

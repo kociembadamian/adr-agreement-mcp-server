@@ -1,0 +1,26 @@
+{
+  "_source": "ADR Chapter 3.4 (limitedQuantity / LQ) and Chapter 3.5 (exceptedQuantity / EQ)",
+  "limitedQuantity_LQ": {
+    "api_field": "limitedQuantity — numeric/text value from column (7a) of Table A = maximum net quantity per inner packaging or article. A value of '0' means the entry is not permitted to be carried as a limited quantity.",
+    "unified_rules_3_4": {
+      "max_gross_mass_per_package": "30 kg generally; 20 kg if the inner packagings are fragile (glass/porcelain/stoneware or certain plastics) — these require an intermediate packaging.",
+      "packaging_construction": "Inner packaging plus outer packaging (an intermediate packaging is permitted); for Class 8 packing group II in glass/porcelain/stoneware inner packagings, a rigid intermediate packaging is mandatory.",
+      "marking": "LQ mark — black-and-white diamond (figure 3.4.7.1), minimum 100x100mm (may be reduced to 50x50mm).",
+      "exemptions": "Goods in limited quantities are exempt from most ADR provisions except those expressly listed (including classification, selected parts of 3.1-3.3, basic packing rules, and part 8 to a limited extent).",
+      "cargo_transport_unit_marking": "Required only for transport units over 12 t, and only when the total gross mass of LQ goods on the unit exceeds 8 t."
+    }
+  },
+  "exceptedQuantity_EQ": {
+    "api_field": "exceptedQuantity — code from column (7b) of Table A (E0-E5).",
+    "table": {
+      "E0": {"description": "Not permitted as an excepted quantity."},
+      "E1": {"max_per_inner_packaging": "30 g/ml", "max_per_outer_packaging": "1000 g/ml"},
+      "E2": {"max_per_inner_packaging": "30 g/ml", "max_per_outer_packaging": "500 g/ml"},
+      "E3": {"max_per_inner_packaging": "30 g/ml", "max_per_outer_packaging": "300 g/ml"},
+      "E4": {"max_per_inner_packaging": "1 g/ml", "max_per_outer_packaging": "500 g/ml"},
+      "E5": {"max_per_inner_packaging": "no value given (see the applicable special provision)", "max_per_outer_packaging": "300 g/ml"}
+    },
+    "units": "Grams for solids, millilitres for liquids and gases.",
+    "unified_rules_3_5": "Goods in excepted quantities are exempt from most of ADR except: training (1.3), classification/packing groups (Part 2), and the basic packing requirements of 4.1.1.1, 4.1.1.2, 4.1.1.4 and 4.1.1.6. Does not apply to articles. Class 7 substances are subject to the additional requirements of 1.7.1.5."
+  }
+}

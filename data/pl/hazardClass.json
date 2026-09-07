@@ -1,0 +1,18 @@
+{
+  "_source": "ADR dział 2.1.1.1 — lista klas towarów niebezpiecznych (pole API: hazardClass)",
+  "classes": {
+    "1": "Materiały wybuchowe i przedmioty z materiałami wybuchowymi",
+    "2": "Gazy",
+    "3": "Materiały zapalne ciekłe",
+    "4.1": "Materiały zapalne stałe, materiały samoreaktywne, materiały polimeryzujące i materiały wybuchowe odczulone stałe",
+    "4.2": "Materiały podatne na samozapalenie",
+    "4.3": "Materiały wydzielające w zetknięciu z wodą gazy palne",
+    "5.1": "Materiały utleniające",
+    "5.2": "Nadtlenki organiczne",
+    "6.1": "Materiały trujące",
+    "6.2": "Materiały zakaźne",
+    "7": "Materiały promieniotwórcze — POMIJANE W ANALIZACH (klasa wyjątkowo złożona, zalecenie źródła: odpowiedzi modelu tylko w ograniczonym zakresie)",
+    "8": "Materiały żrące",
+    "9": "Różne materiały i przedmioty niebezpieczne"
+  }
+}

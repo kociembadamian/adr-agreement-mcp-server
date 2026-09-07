@@ -1,0 +1,20 @@
+{
+  "_source": "ADR 7.2.4 — przepisy szczególne dotyczące przewozu w sztukach przesyłek (pole API: specProvPackages, kolumna 16 tabeli A)",
+  "kody_V": {
+    "V1": "Sztuki przesyłek — tylko w pojazdach zamkniętych/przykrytych opończą lub kontenerach zamkniętych/przykrytych opończą.",
+    "V2": "Materiały/przedmioty klasy 1 wymagające jednostki transportowej z pojazdem(-ami) EX/II lub EX/III (dobór wg ograniczeń ilościowych 7.5.5.2); przyczepy spełniające wymagania EX/II lub EX/III mogą być ciągnięte przez pojazd niespełniający tych wymagań; przy transporcie multimodalnym z/do portów/terminali możliwe zastępcze użycie EX/II zamiast EX/III pod warunkami zgodności z IMDG/RID/ICAO.",
+    "V3": "Materiały sproszkowane swobodnie płynące i ognie sztuczne — podłoga kontenera niemetaliczna lub pokryta wykładziną niemetaliczną.",
+    "V4": "(Zarezerwowany)",
+    "V5": "Zakaz przewozu w kontenerach małych.",
+    "V6": "(Skreślony)",
+    "V7": "(Zarezerwowany)",
+    "V8": "Patrz 7.1.7 (kontrola temperatury) — nie dotyczy materiałów z 3.1.2.6 stabilizowanych inhibitorami z TSR>50°C, chyba że temp. podczas przewozu może przekroczyć 55°C.",
+    "V9": "(Zarezerwowany)",
+    "V10": "DPPL — tylko w pojazdach zamkniętych/przykrytych opończą lub kontenerach zamkniętych/przykrytych opończą.",
+    "V11": "DPPL inne niż metalowe/ze sztywnego tworzywa — tylko w pojazdach/kontenerach zamkniętych lub przykrytych opończą.",
+    "V12": "DPPL typu 31HZ2 (31HA2/HB2/HN2/HD2/HH2) — tylko w pojazdach lub kontenerach zamkniętych.",
+    "V13": "Materiały w workach 5H1/5L1/5M1 — tylko w pojazdach lub kontenerach zamkniętych.",
+    "V14": "Aerozole/naboje gazowe do odzysku/utylizacji (przepis 327) — tylko pojazdy/kontenery odkryte lub wentylowane.",
+    "V15": "DPPL — tylko w pojazdach lub kontenerach zamkniętych."
+  }
+}

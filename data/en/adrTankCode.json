@@ -1,0 +1,44 @@
+{
+  "_source": "ADR 4.3.3/4.3.4 (API field: adrTankCode, Table A column 12) — PARTIALLY OMITTED by design: the full, very extensive \"rational use\" tables (assigning every combination of class/classification code/packing group to a specific tank code) were NOT reproduced in full — too voluminous as tabular data. What is reproduced is the code decoding structure, the hierarchy rule, and the complete list of substances with an individually assigned tank code (marked \"(+)\" in column 12).",
+  "code_structure": {
+    "description": "The ADR tank code consists of 4 parts in a fixed order, e.g. \"L4BH\".",
+    "part_1_type": {"L": "tanks for liquid substances (or solids carried in the molten state)", "S": "tanks for solid substances (powdery/granular)"},
+    "part_2_calculation_pressure": {"G": "minimum calculation pressure per the general requirements of 6.8.2.1.14", "bar_values": "1.5 / 2.65 / 4 / 10 / 15 / 21 — minimum calculation pressure in bar"},
+    "part_3_openings": {"A": "bottom openings for filling/discharge, 2 closures", "B": "bottom openings, 3 closures", "C": "top openings for filling and discharge, with only cleaning openings below the surface of the liquid", "D": "top openings, with no openings below the surface of the liquid"},
+    "part_4_valves_safety_equipment": {"V": "breather device per 6.8.2.2.6, without a flame arrester, or tank not resistant to explosion pressure shock", "F": "breather device per 6.8.2.2.6 with a flame arrester, or tank resistant to explosion pressure shock", "N": "without a breather device per 6.8.2.2.6, not hermetically closed", "H": "hermetically closed tank (1.2.1)"}
+  },
+  "tank_hierarchy": {
+    "rule": "A tank bearing a code other than the one indicated for a given substance may be used if each of the 4 parts of the code corresponds to a safety level at least equivalent to (or higher than) that of the assigned code, per the ascending hierarchy below — this does not, however, take account of special provisions for individual entries (see 4.3.5, 6.8.4).",
+    "part_1": "S → L",
+    "part_2": "G → 1.5 → 2.65 → 4 → 10 → 15 → 21 bar",
+    "part_3": "A → B → C → D",
+    "part_4": "V → F → N → H",
+    "example": "a tank coded L10CN is permitted for a substance requiring L4BN; a tank coded L4BN is permitted for a substance requiring SGAN."
+  },
+  "individual_assignments_plus": {
+    "_description": "Substances marked \"(+)\" in Table A column 12 have an individually assigned, mandatory tank code; alternative tanks are permitted only if specified in the type-approval certificate, or tanks with a higher code value per the hierarchy plus the special provisions in column 13.",
+    "un_examples": {
+      "UN 0331": "Explosive, blasting, type B — S2.65AN",
+      "UN 2448 (sulphur, molten)": "LGBV",
+      "UN 3531/3533 (polymerizing substance, solid, stabilized/temperature controlled, n.o.s.)": "SGAN",
+      "UN 3532/3534 (polymerizing substance, liquid, stabilized/temperature controlled, n.o.s.)": "L4BN",
+      "UN 1381/2447 (phosphorus, white/yellow, dry/under water/solution/molten)": "L10DH",
+      "UN 1389,1391,1392,1415,1420,1421,1422,1428,2257 (alkali metals/amalgams/dispersions, liquid)": "L10BN",
+      "UN 3401,3402,3403,3404,3482 (amalgams/alloys/dispersions, solid)": "L10CH",
+      "UN 1407 caesium, UN 1423 rubidium": "L10CH",
+      "UN 1402 calcium carbide, packing group I": "S2.65AN",
+      "UN 1873 perchloric acid, 50–72%": "L4DN",
+      "UN 2015 hydrogen peroxide, stabilized, >70%": "L4DV (or L4BV — see variants in the source table)",
+      "UN 2014 hydrogen peroxide 20–60%, UN 2426, UN 3149, UN 3375 (liquid)": "L4BV / LGAV (depending on the specific entry)",
+      "UN 3375 ammonium nitrate emulsion/suspension/gel, solid": "SGAV",
+      "UN 3109/3119 organic peroxide type F, liquid": "L4BN",
+      "UN 3110/3120 organic peroxide type F, solid": "S4AN",
+      "UN 1613/3294 hydrocyanic acid solution": "L15DH",
+      "class_7 (radioactive material)": "special tanks; minimum requirements: liquids L2.65CN, solids S2.65AN (tanks for radioactive material may also be used for other goods under the conditions of 5.1.3.2)",
+      "UN 1052,1744,1790 (hydrogen fluoride, bromine, hydrofluoric acid >85%)": "L21DH",
+      "UN 1791,1908 (hypochlorite/chlorite solution)": "L4BV"
+    },
+    "tanks_for_liquid_wastes": "Tanks complying with Chapter 6.10 (two closures per 6.10.3.2) — code L4AH; if they allow alternating carriage of liquids and solids, a combined code L4AH+S4AH."
+  },
+  "_note_rational_use": "The full 4.3.4.1.2 tables assigning every combination of class/classification code/packing group to a specific tank code (e.g. LGAV, LGBV, LGBF, L1.5BN, L4BN, L4BH, L10BH, L10CH, L10DH, L15CH, L21DH, SGAV, SGAN, SGAH, S4AH, S10AN, S10AH) have been omitted — too extensive as tabular data. In practice, the adrTankCode field returned by the API already gives the correct/required code for a given UN number, so these tables are mainly needed to verify alternative tanks, which the hierarchy rule above already covers."
+}

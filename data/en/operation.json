@@ -1,0 +1,29 @@
+{
+  "_source": "ADR Chapter 8.5 — additional requirements concerning certain classes or substances, vehicle operation/supervision (API field: operation, Table A column 19). In case of conflict with Chapters 8.1–8.4, the provisions below take precedence.",
+  "s_codes": {
+    "S1": "Class 1 (explosive substances/articles) — a bundle of requirements: (1) equivalent driver training may substitute for the specialized course; (2) an authorized representative of the authorities may be required to travel with the vehicle (at the carrier's expense); (3) no smoking/fire/naked flame (including e-cigarettes) in or near the vehicle, or during loading/unloading; (4) loading/unloading in a public place — prohibited in a built-up area without permission, requires notification of the authorities outside a built-up area (except where urgently required for safety), segregation by warning label when handling in a public place, ≥50 m distance between parked vehicles (not applicable within the same transport unit); (5) convoys — ≥50 m distance between transport units, with possible requirements on order/composition; supervision (Chapter 8.4) required above net-mass thresholds of explosive substance depending on subdivision/compatibility group (1.1/1.2/1.5: 0 kg, i.e. always supervised; 1.3 group C: 0 kg; other 1.3: 50 kg; 1.4 (except as noted): 50 kg; 1.6: 50 kg; selected 1.4 UN numbers [0104,0237,0255,0267,0289,0361,0365,0366,0440,0441,0455,0456,0500,0512,0513]: 0 kg); for mixed loads, the lowest threshold applies; (7) EX/II/EX/III vehicles must be locked to prevent access by unauthorized persons except during loading/unloading.",
+    "S2": "Flammable liquids / flammable gases — portable lighting equipment other than intrinsically safe types must not be brought into the cargo compartment of closed vehicles (for substances with a flashpoint ≤60°C, or flammable Class 2 gases); no combustion heaters in FL vehicles during loading/unloading; for FL vehicles, a good electrical bond between chassis and ground and a limit on filling speed are required before filling/discharging the tank.",
+    "S3": "Infectious substances — the requirements of columns (2), (3), (5) of Table 8.1.4.1 and of 8.3.4 do not apply.",
+    "S4": "See 7.1.7 (temperature control) — does not apply to substances of 3.1.2.6 stabilized by inhibition with an SADT >50°C, unless the carriage temperature could exceed 55°C (same rule as V8).",
+    "S5": "[Class 7 — details omitted] Radioactive material in excepted packages (UN 2908, 2909, 2910, 2911) — exempt from the written instructions requirement (8.1.2.1(b)) and from 8.2.1, 8.3.1, 8.3.4.",
+    "S6": "[Class 7 — details omitted] Radioactive material carried other than in excepted packages — exempt from 8.3.1 for vehicles bearing category I-WHITE labels; exempt from 8.3.4 where there is no subsidiary hazard.",
+    "S7": "(Deleted)",
+    "S8": "For >2000 kg of these substances in a transport unit, operational stops must avoid inhabited or busy places (a longer stop there only with the authorities' consent).",
+    "S9": "As S8, but without a mass threshold — operational stops near inhabited or busy places must always be avoided (a longer stop only with the authorities' consent).",
+    "S10": "From April to October, during a stop, packages must be protected from the sun (e.g. a sheet ≥20 cm above the load), where required by national provisions.",
+    "S11": "Equivalent driver training (topics of 8.2.2.3.5) may substitute for the specialized course.",
+    "S12": "[Class 7] Exemption from the 8.2.1 training requirement where ≤10 packages of radioactive material, the sum of transport indices ≤3, and no subsidiary hazard — basic training on radiation hazards, confirmed by the employer's certificate, is nonetheless required.",
+    "S13": "(Deleted)",
+    "S14": "Supervision of vehicles (Chapter 8.4) — for any quantity of these substances.",
+    "S15": "As S14 (any quantity), but exempt where the cargo compartment is locked against unauthorized access or the packages are otherwise secured.",
+    "S16": "Supervision required above the >500 kg threshold; in addition, substances under 1.10.3 exceeding 500 kg require constant supervision under a security plan per 1.10.3.2.",
+    "S17": "Supervision required above the >1000 kg threshold.",
+    "S18": "Supervision required above the >2000 kg threshold.",
+    "S19": "Supervision required above the >5000 kg threshold.",
+    "S20": "Supervision required above the >10000 kg threshold (packages) or >3000 l (tanks).",
+    "S21": "[Class 7] Supervision required for any mass of radioactive material, with exemption where: the compartment is locked/secured AND the radiation level at the vehicle's surface is ≤5 µSv/h; substances under 1.10.3 require constant supervision under a security plan.",
+    "S22": "Supervision required above the >5000 kg threshold (packaged goods) or >3000 l (tanks).",
+    "S23": "Supervision required (tanks/bulk) above the >3000 kg or >3000 l threshold.",
+    "S24": "Supervision required above the >100 kg threshold."
+  }
+}

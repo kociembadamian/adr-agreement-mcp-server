@@ -1,0 +1,161 @@
+{
+  "_source": "ADR dział 2.2 — systemy kodów klasyfikacyjnych per klasa (pole API: classificationCode). To NIE jest lookup 1:1 — kod trzeba dekodować wg klasy towaru (hazardClass).",
+  "class_1": {
+    "_note": "Kod klasyfikacyjny klasy 1 = podklasa (1.1–1.6) + litera grupy zgodności (A–S), np. '1.1D'.",
+    "podklasy": {
+      "1.1": "Zagrożenie wybuchem masowym (obejmuje natychmiast cały ładunek)",
+      "1.2": "Zagrożenie rozrzutem, ale nie wybuchem masowym",
+      "1.3": "Zagrożenie pożarem i małe zagrożenie wybuchem lub rozrzutem (lub oba), bez wybuchu masowego",
+      "1.4": "Tylko małe zagrożenie wybuchem w razie zapalenia/zainicjowania — skutki ograniczone do sztuki przesyłki",
+      "1.5": "Materiały bardzo mało wrażliwe, zagrożenie wybuchem masowym, małe prawdopodobieństwo zainicjowania",
+      "1.6": "Przedmioty skrajnie niewrażliwe, brak zagrożenia wybuchem masowym"
+    },
+    "grupy_zgodnosci": {
+      "A": "Materiał wybuchowy inicjujący",
+      "B": "Przedmiot z materiałem wybuchowym inicjującym, bez 2+ skutecznych zabezpieczeń (np. zapalniki, spłonki)",
+      "C": "Materiał wybuchowy miotający/deflagrujący lub przedmiot go zawierający",
+      "D": "Wtórnie detonujący materiał wybuchowy lub proch czarny (bez inicjatora i ładunku miotającego), lub przedmiot z inicjatorem i 2+ zabezpieczeniami",
+      "E": "Przedmiot z wtórnie detonującym materiałem wybuchowym, bez inicjatora, z ładunkiem miotającym (poza ciekłym/żelowym paliwem lub cieczami samozapalnymi)",
+      "F": "Przedmiot z wtórnie detonującym materiałem wybuchowym, z własnym inicjatorem, z ładunkiem miotającym (poza hipergolem/ciekłym paliwem) lub bez",
+      "G": "Materiał pirotechniczny lub przedmiot z materiałem pirotechnicznym/oświetlającym/zapalającym/łzawiącym/dymotwórczym",
+      "H": "Przedmiot z materiałem wybuchowym i białym fosforem",
+      "J": "Przedmiot z materiałem wybuchowym i materiałem zapalnym ciekłym lub żelem",
+      "K": "Przedmiot z materiałem wybuchowym i trującym środkiem chemicznym",
+      "L": "Materiał/przedmiot wybuchowy o szczególnym zagrożeniu (aktywacja wodą, hipergol, fosforki, pirofory) — wymaga oddzielenia każdego typu",
+      "N": "Przedmioty zawierające głównie materiały wybuchowe skrajnie niewrażliwe",
+      "S": "Materiał/przedmiot zapakowany tak, że skutki przypadkowego zadziałania ograniczają się do sztuki przesyłki"
+    }
+  },
+  "class_2": {
+    "_note": "Grupy wg właściwości niebezpiecznych (poza aerozolami i chemikaliami pod ciśnieniem).",
+    "grupy": {
+      "A": "Duszące",
+      "O": "Utleniające",
+      "F": "Palne",
+      "T": "Trujące",
+      "TF": "Trujące palne",
+      "TC": "Trujące żrące",
+      "TO": "Trujące utleniające",
+      "TFC": "Trujące palne żrące",
+      "TOC": "Trujące utleniające żrące"
+    }
+  },
+  "class_3": {
+    "F": "Materiały zapalne ciekłe bez zagrożenia dodatkowego",
+    "F1": "Temperatura zapłonu ≤ 60°C",
+    "F2": "Temperatura zapłonu > 60°C, przewożone/nadawane w temp. ≥ temp. zapłonu (podwyższona temperatura)",
+    "F3": "Przedmioty zawierające materiały zapalne ciekłe",
+    "FT": "Materiały zapalne ciekłe trujące",
+    "FT1": "Materiały zapalne ciekłe trujące",
+    "FT2": "Pestycydy",
+    "FC": "Materiały zapalne ciekłe żrące",
+    "FTC": "Materiały zapalne ciekłe trujące żrące",
+    "D": "Materiały wybuchowe odczulone ciekłe"
+  },
+  "class_4_1": {
+    "F": "Materiały zapalne stałe bez zagrożenia dodatkowego",
+    "F1": "Materiały organiczne",
+    "F2": "Materiały organiczne stopione",
+    "F3": "Materiały nieorganiczne",
+    "F4": "Przedmioty",
+    "FO": "Materiały zapalne stałe utleniające",
+    "FT": "Materiały zapalne stałe trujące",
+    "FT1": "Materiały organiczne trujące",
+    "FT2": "Materiały nieorganiczne trujące",
+    "FC": "Materiały zapalne stałe żrące",
+    "FC1": "Materiały organiczne żrące",
+    "FC2": "Materiały nieorganiczne żrące",
+    "D": "Materiały wybuchowe odczulone stałe bez zagrożenia dodatkowego",
+    "DT": "Materiały wybuchowe odczulone stałe trujące",
+    "SR": "Materiały samoreaktywne",
+    "SR1": "Niewymagające kontrolowania temperatury",
+    "SR2": "Wymagające kontrolowania temperatury",
+    "PM": "Materiały polimeryzujące",
+    "PM1": "Niewymagające kontrolowania temperatury",
+    "PM2": "Wymagające kontrolowania temperatury"
+  },
+  "class_4_2": {
+    "S": "Materiały podatne na samozapalenie bez zagrożenia dodatkowego",
+    "S1": "Materiał organiczny ciekły", "S2": "Materiał organiczny stały",
+    "S3": "Materiał nieorganiczny ciekły", "S4": "Materiał nieorganiczny stały",
+    "S5": "Materiał metaloorganiczny", "S6": "Przedmioty",
+    "SW": "Podatne na samozapalenie, w kontakcie z wodą wydzielają gazy palne",
+    "SW1": "Materiały", "SW2": "Przedmioty",
+    "SO": "Podatne na samozapalenie, utleniające",
+    "ST": "Podatne na samozapalenie, trujące",
+    "ST1": "Materiał organiczny trujący ciekły", "ST2": "Materiał organiczny trujący stały",
+    "ST3": "Materiał nieorganiczny trujący ciekły", "ST4": "Materiał nieorganiczny trujący stały",
+    "SC": "Podatne na samozapalenie, żrące",
+    "SC1": "Materiał organiczny żrący ciekły", "SC2": "Materiał organiczny żrący stały",
+    "SC3": "Materiał nieorganiczny żrący ciekły", "SC4": "Materiał nieorganiczny żrący stały"
+  },
+  "class_4_3": {
+    "W": "W kontakcie z wodą wydziela gazy palne, bez zagrożenia dodatkowego",
+    "W1": "Materiały ciekłe", "W2": "Materiały stałe", "W3": "Przedmioty",
+    "WF1": "Ciekłe zapalne", "WF2": "Stałe zapalne",
+    "WS": "Stałe samonagrzewające się", "WO": "Utleniające stałe",
+    "WT": "Trujące", "WT1": "Materiały ciekłe", "WT2": "Materiały stałe",
+    "WC": "Żrące", "WC1": "Materiały ciekłe", "WC2": "Materiały stałe",
+    "WFC": "Zapalne żrące"
+  },
+  "class_5_1": {
+    "O": "Materiały utleniające bez zagrożenia dodatkowego",
+    "O1": "Materiały ciekłe", "O2": "Materiały stałe", "O3": "Przedmioty",
+    "OF": "Stałe zapalne", "OS": "Stałe samonagrzewające się", "OW": "Stałe, w kontakcie z wodą wydzielają gazy palne",
+    "OT": "Trujące", "OT1": "Materiały ciekłe", "OT2": "Materiały stałe",
+    "OC": "Żrące", "OC1": "Materiały ciekłe", "OC2": "Materiały stałe",
+    "OTC": "Trujące żrące"
+  },
+  "class_5_2": {
+    "P1": "Nadtlenki organiczne niewymagające kontrolowania temperatury",
+    "P2": "Nadtlenki organiczne wymagające kontrolowania temperatury"
+  },
+  "class_6_1": {
+    "T": "Trujące bez zagrożenia dodatkowego",
+    "T1": "Materiały organiczne ciekłe", "T2": "Materiały organiczne stałe", "T3": "Materiały metaloorganiczne",
+    "T4": "Materiały nieorganiczne ciekłe", "T5": "Materiały nieorganiczne stałe",
+    "T6": "Materiały ciekłe stosowane jako pestycydy", "T7": "Materiały stałe stosowane jako pestycydy",
+    "T8": "Próbki", "T9": "Inne materiały trujące", "T10": "Przedmioty",
+    "TF": "Trujące, zapalne", "TF1": "Materiały ciekłe", "TF2": "Materiały ciekłe stosowane jako pestycydy",
+    "TF3": "Materiały stałe", "TF4": "Przedmioty",
+    "TS": "Trujące, podatne na samonagrzewanie, stałe",
+    "TW": "Trujące, w kontakcie z wodą wydzielają gazy palne", "TW1": "Materiały ciekłe", "TW2": "Materiały stałe",
+    "TO": "Trujące utleniające", "TO1": "Materiały ciekłe", "TO2": "Materiały stałe",
+    "TC": "Trujące żrące", "TC1": "Materiały organiczne ciekłe", "TC2": "Materiały organiczne stałe",
+    "TC3": "Materiały nieorganiczne ciekłe", "TC4": "Materiały nieorganiczne stałe", "TC5": "Przedmioty",
+    "TFC": "Trujące zapalne żrące", "TFW": "Trujące zapalne, w kontakcie z wodą wydzielają gazy palne"
+  },
+  "class_6_2": {
+    "I1": "Materiały zakaźne dla ludzi",
+    "I2": "Materiały zakaźne tylko dla zwierząt",
+    "I3": "Odpady medyczne lub kliniczne",
+    "I4": "Materiały biologiczne"
+  },
+  "class_7": {
+    "_note": "Świadomie pomijane w analizach — klasa wyjątkowo złożona (wg wskazówki źródła), odpowiedzi modelu tylko w ograniczonym zakresie."
+  },
+  "class_8": {
+    "C1_C4": "Materiały kwaśne (C1 ciekłe nieorg., C2 stałe nieorg., C3 ciekłe org., C4 stałe org.)",
+    "C5_C8": "Materiały zasadowe (C5 ciekłe nieorg., C6 stałe nieorg., C7 ciekłe org., C8 stałe org.)",
+    "C9": "Inne materiały żrące ciekłe", "C10": "Inne materiały żrące stałe", "C11": "Przedmioty",
+    "CF": "Żrące zapalne", "CF1": "Materiały ciekłe", "CF2": "Materiały stałe",
+    "CS": "Żrące samonagrzewające się", "CS1": "Materiały ciekłe", "CS2": "Materiały stałe",
+    "CW": "Żrące, w kontakcie z wodą wydzielają gazy palne", "CW1": "Materiały ciekłe", "CW2": "Materiały stałe",
+    "CO": "Żrące utleniające", "CO1": "Materiały ciekłe", "CO2": "Materiały stałe",
+    "CT": "Żrące trujące", "CT1": "Materiały ciekłe", "CT2": "Materiały stałe", "CT3": "Przedmioty",
+    "CFT": "Żrące zapalne ciekłe trujące", "COT": "Żrące utleniające trujące"
+  },
+  "class_9": {
+    "M1": "Materiały wdychane w postaci drobnego pyłu mogące zagrażać zdrowiu",
+    "M2": "Materiały/przedmioty, które w razie pożaru mogą tworzyć dioksyny",
+    "M3": "Materiały wydzielające pary palne",
+    "M4": "Baterie litowe i baterie sodowo-jonowe",
+    "M5": "Przedmioty ratownicze",
+    "M6": "Materiał zagrażający środowisku wodnemu, ciekły",
+    "M7": "Materiał zagrażający środowisku wodnemu, stały",
+    "M8": "Mikroorganizmy i organizmy zmodyfikowane genetycznie",
+    "M9": "Materiały o podwyższonej temperaturze, ciekłe",
+    "M10": "Materiały o podwyższonej temperaturze, stałe",
+    "M11": "Inne materiały/przedmioty stwarzające zagrożenie podczas przewozu, nieodpowiadające pozostałym definicjom"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "_source": "ADR dział 3.3 — przepisy szczególne. CZĘŚĆ 3 — numery 365–396.",
+  "przepisy": {
+    "365": "Przyrządy/przedmioty z rtęcią lub galem — patrz UN 3506 lub 3554.",
+    "366": "Przyrządy/przedmioty z ≤1kg rtęci lub galu — nie podlegają ADR.",
+    "367": "Nazwy przewozowe „materiał pokrewny do farby” (i warianty żrący/zapalny/drukarski) mogą być użyte gdy sztuka przesyłki zawiera jednocześnie farbę i materiał pokrewny danego typu.",
+    "368": "Heksafluorek uranu nierozszczepialny/wyłączony → UN 3507 lub UN 2978.",
+    "369": "Materiał promieniotwórczy trujący/żrący w sztuce wyłączonej → klasa 6.1 z zagrożeniem dodatkowym promieniotwórczym i żrącym.",
+    "370": "Heksafluorek uranu do tej pozycji tylko po spełnieniu warunków 2.2.7.2.4.1.2/.5/.5.2 (i 2.2.7.2.3.5 dla wyłączonego rozszczepialnego); dodatkowe przepisy 5.1.3.2 itd.; nalepka klasy 7 niewymagana.",
+    "371": "Tylko azotan amonu z >0,2% materiałów palnych, lub ≤0,2% z wynikiem pozytywnym w badaniu Serii 2; nie dla pozycji z własną nazwą w Tabeli A (w tym ANFO).",
+    "372": "Przedmioty z małym naczyniem ciśnieniowym (≤0,5l, ≤25 bar w 15°C, ciśnienie rozrywające ≥4×robocze) i urządzeniem opróżniającym — szczegółowe wymagania konstrukcyjne/testowe (ogień, wyzwolenie) i dokumentacja producenta.",
+    "373": "Kondensatory asymetryczne >0,3Wh: zabezpieczenie przed zwarciem, wentylacja ciśnieniowa, oznakowanie Wh, wytrzymałość 95kPa (jeśli elektrolit niebezpieczny); progi zwolnień do 20Wh z testem spadku 1,2m; detektory promieniowania neutronowego z BF3 — szczegółowe wymagania konstrukcyjne/pakowania/limity gazu (13g/detektor, 52g/opakowanie, 1g bez ADR).",
+    "375": "Materiały w opakowaniach ≤5l (ciecze) / ≤5kg (stałe) — nie podlegają innym przepisom ADR poza podstawowym pakowaniem (4.1.1.1/.2/.4-8).",
+    "376": "Uszkodzone/wadliwe ogniwa/baterie litowe/sodowo-jonowe: przewóz wg zasad UN 3090/3091/3480/3481/3551/3552 minus przepis 230, pakowanie wg P908/LP904 (lub P911/LP906 gdy ryzyko gwałtownego rozpadu), oznakowanie „USZKODZONE/WADLIWE...”, dokument z zapisem „Przewóz zgodny z przepisem szczególnym 376”.",
+    "377": "Ogniwa/baterie do utylizacji/recyklingu (w tym z niekonwencjonalnymi akumulatorami) — pakowanie wg P909, zwolnienie z 2.2.9.1.7.1(a-g)/.2(a-f), oznakowanie „BATERIE LITOWE DO UTYLIZACJI/RECYKLINGU”.",
+    "378": "Detektory promieniowania z gazem w naczyniach jednorazowych (poza działem 6.2/P200) — limity konstrukcyjne (≤50 bar, ≤12l, wytrzymałość 3-4×robocze), test spadku 1,2m, dokument „Przewóz zgodny z przepisem szczególnym 378”; ≤50ml — nie podlegają ADR.",
+    "379": "Amoniak bezwodny zaadsorbowany/zaabsorbowany w systemach dozowania — nie podlega ADR pod warunkami ciśnieniowymi (< 0,6/1/12 bar w 20/35/85°C), max 10kg amoniaku, wymagania konstrukcyjne naczyń wg ISO 11114-1.",
+    "382": "Kulki polimeryczne (polistyren, PMMA, inne polimery) mogą nie być klasyfikowane, jeśli test U1 wykazuje brak par palnych.",
+    "383": "Piłeczki do tenisa stołowego z celuloidu ≤3g/szt., ≤500g łącznie na sztukę przesyłki — nie podlegają ADR.",
+    "386": "Stabilizacja przez kontrolę temperatury: przepisy 2.2.41.1.21, 7.1.7, V8, S4, dział 9.6; stabilizacja chemiczna: zapewnienie stabilności przy 50°C (45°C dla cystern przenośnych), z oceną wielu czynników (pojemność, izolacja, czas przewozu itd.).",
+    "387": "Baterie z ogniwami pierwotnymi litowymi i wtórnymi litowo-jonowymi → UN 3090/3091; limity przy przepisie 188: ≤1,5g litu łącznie, ≤10Wh łącznie.",
+    "388": "Klasyfikacja pojazdów wg napędu: UN 3166 (ogniwo paliwowe/silnik spalania na gaz lub ciecz zapalną, w tym hybrydy), UN 3171 (akumulatory mokre/sodowe), UN 3556/3557/3558 (baterie litowo-jonowe/litowo-metaliczne/sodowo-jonowe); definicja pojazdu i urządzenia; zwolnienie integralnych elementów zamontowanych na stałe (poza wymaganiami dla baterii litowych/sodowo-jonowych); uszkodzona bateria w pojeździe → przepis 667(c).",
+    "389": "Baterie litowo-jonowe/litowo-metaliczne w jednostkach transportowych cargo do zasilania zewnętrznego (nie napędu) → UN 3536; wymagania mocowania, zwolnienie z oznakowania samych baterii, ale jednostka ze tablicami/nalepkami.",
+    "390": "Sztuka przesyłki z bateriami w urządzeniach i zapakowanymi z urządzeniami jednocześnie — oznakowanie i dokument obejmujące oba typy (UN 3091/UN 3481).",
+    "392": "Układy magazynowania paliwa gazowego z pojazdów (LPG/CNG/LNG/wodór) przewożone do utylizacji/recyklingu/naprawy — zwolnienie z 4.1.4.1/dział 6.2 pod warunkami zgodności z normami (regulaminy ONZ 67/110/115/134, ISO itd.), szczelności, zabezpieczenia zaworów, napełnienia ≤20%, dokumentacji uproszczonej.",
+    "393": "Nitroceluloza — kryteria testu Bergmanna-Junka lub papierka z fioletem metylowym (Załącznik 10 PBiK); badanie 3(c) niewymagane.",
+    "395": "Pozycja tylko dla odpadów medycznych kategorii A przewożonych do utylizacji.",
+    "396": "Duże, mocne przedmioty z podłączonymi butlami gazu (azot/gaz obojętny/powietrze sprężone) z otwartymi zaworami — dopuszczalne pod warunkiem ograniczenia ciśnienia w przedmiocie do 35kPa przez regulator."
+  }
+}

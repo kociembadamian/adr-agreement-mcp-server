@@ -1,0 +1,9 @@
+{
+  "_source": "ADR 7.3.2.1 — przepisy szczególne dot. przewozu luzem w kontenerach do przewozu luzem (pole API: specProvBulk, kolumna 10 tabeli A)",
+  "kody_BK": {
+    "BK1": "Przewóz luzem dozwolony w kontenerach do przewozu luzem przykrytych opończą.",
+    "BK2": "Przewóz luzem dozwolony w kontenerach do przewozu luzem zamkniętych.",
+    "BK3": "Przewóz luzem dozwolony w kontenerach do przewozu luzem elastycznych."
+  },
+  "_uwaga": "To trzy podstawowe kody kontenerów do przewozu luzem; dział 7.3.3 zawiera dodatkowo szczegółowe przepisy szczególne VV/AP dla konkretnych materiałów przewożonych luzem — nie odtworzone tu (poza zakresem przykładowego rekordu źródłowego, w którym pole specProvBulk było puste)."
+}

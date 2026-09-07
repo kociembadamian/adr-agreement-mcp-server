@@ -1,0 +1,32 @@
+{
+  "_source": "ADR 5.2.2.2.2 — wzory nalepek ostrzegawczych (pole API: labels). Legenda numer wzoru → znaczenie/kolor tła/symbol. To nie jest treść całego działu 5.2/5.3 (umieszczanie nalepek) — tylko sam słownik wzorów, wystarczający do wyjaśnienia wartości pola.",
+  "wzory": {
+    "1": {"klasa": "1 (podklasy 1.1, 1.2, 1.3)", "symbol": "Eksplodująca bomba, czarny", "tlo": "Pomarańczowe"},
+    "1.4": {"klasa": "1, podklasa 1.4", "symbol": "Cyfra „1.4”, czarny", "tlo": "Pomarańczowe"},
+    "1.5": {"klasa": "1, podklasa 1.5", "symbol": "Cyfra „1.5”, czarny", "tlo": "Pomarańczowe"},
+    "1.6": {"klasa": "1, podklasa 1.6", "symbol": "Cyfra „1.6”, czarny", "tlo": "Pomarańczowe"},
+    "2.1": {"klasa": "2 — gazy palne", "symbol": "Płomień, czarny lub biały", "tlo": "Czerwone"},
+    "2.2": {"klasa": "2 — gazy niepalne i nietrujące", "symbol": "Butla do gazu, czarny lub biały", "tlo": "Zielone"},
+    "2.3": {"klasa": "2 — gazy trujące", "symbol": "Czaszka i piszczele, czarny", "tlo": "Białe"},
+    "3": {"klasa": "3 — materiały zapalne ciekłe", "symbol": "Płomień, czarny lub biały", "tlo": "Czerwone"},
+    "4.1": {"klasa": "4.1 — zapalne stałe / samoreaktywne / polimeryzujące / wybuchowe odczulone stałe", "symbol": "Płomień, czarny", "tlo": "Białe z 7 czerwonymi pionowymi pasami"},
+    "4.2": {"klasa": "4.2 — podatne na samozapalenie", "symbol": "Płomień, czarny", "tlo": "Górna połowa biała, dolna czerwona"},
+    "4.3": {"klasa": "4.3 — w kontakcie z wodą wydzielają gazy palne", "symbol": "Płomień, czarny lub biały", "tlo": "Niebieskie"},
+    "5.1": {"klasa": "5.1 — utleniające", "symbol": "Płomień nad kołem, czarny", "tlo": "Żółte"},
+    "5.2": {"klasa": "5.2 — nadtlenki organiczne", "symbol": "Płomień, czarny lub biały", "tlo": "Górna czerwona, dolna żółta"},
+    "6.1": {"klasa": "6.1 — trujące", "symbol": "Czaszka i skrzyżowane kości, czarne", "tlo": "Białe"},
+    "6.2": {"klasa": "6.2 — zakaźne", "symbol": "Trzy półksiężyce na kole, czarne", "tlo": "Białe", "uwaga": "dolna połowa może zawierać napis „MATERIAŁ ZAKAŹNY” i informację o zgłoszeniu władzom sanitarnym"},
+    "7A": {"klasa": "7 — kategoria I-BIAŁA", "symbol": "Trójlistek, czarny", "tlo": "Białe", "uwaga": "napis RADIOACTIVE/CONTENTS/ACTIVITY, jeden czerwony pasek"},
+    "7B": {"klasa": "7 — kategoria II-ŻÓŁTA", "symbol": "Trójlistek, czarny", "tlo": "Górna żółta z białym obrzeżem, dolna biała", "uwaga": "napis + TRANSPORT INDEX, dwa czerwone paski"},
+    "7C": {"klasa": "7 — kategoria III-ŻÓŁTA", "symbol": "Trójlistek, czarny", "tlo": "Górna żółta z białym obrzeżem, dolna biała", "uwaga": "napis + TRANSPORT INDEX, trzy czerwone paski"},
+    "7D": {"klasa": "7 — duża nalepka ostrzegawcza (kontenery/pojazdy)", "symbol": "Trójlistek, czarny", "tlo": "Górna żółta, dolna biała", "uwaga": "napis RADIOACTIVE lub numer UN"},
+    "7E": {"klasa": "7 — materiał rozszczepialny (zagrożenie krytycznością)", "symbol": "—", "tlo": "Białe", "uwaga": "napis FISSILE + CRITICALITY SAFETY INDEX"},
+    "8": {"klasa": "8 — żrące", "symbol": "Krople z dwóch probówek atakujące dłoń i metal, czarny", "tlo": "Górna biała, dolna czarna z białym obrzeżem"},
+    "9": {"klasa": "9 — różne materiały/przedmioty niebezpieczne", "symbol": "7 pionowych pasów w górnej połowie, czarny", "tlo": "Białe, podkreślona cyfra 9"},
+    "9A": {"klasa": "9 — baterie litowe / sodowo-jonowe", "symbol": "7 pionowych pasów + grupa ogniw (jedno uszkodzone, płonące), czarny", "tlo": "Białe, podkreślona cyfra 9", "uwaga": "nie stosuje się jako duża nalepka na pojeździe/kontenerze — tam wzór nr 9"}
+  },
+  "znaki_dodatkowe": {
+    "materiał zagrażający środowisku": "Romb, ryba i drzewo czarne na białym/kontrastującym tle, min. 100×100mm (5.2.1.8.3)",
+    "znak dla baterii": "Prostokąt/kwadrat z kreskowaną czerwoną ramką, symbol grupy ogniw + numer UN (5.2.1.9), wymagany przy przepisie szczególnym 188 lub 400"
+  }
+}

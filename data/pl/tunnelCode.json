@@ -1,0 +1,29 @@
+{
+  "_source": "ADR dział 8.6 (pole API: tunnelCode)",
+  "kategorie_tuneli": {
+    "A": "Brak ograniczeń — brak znaku",
+    "B": "Znak z tabliczką „B”",
+    "C": "Znak z tabliczką „C”",
+    "D": "Znak z tabliczką „D”",
+    "E": "Znak z tabliczką „E”"
+  },
+  "_note_kategorie": "To kategoria SAMEGO TUNELU (znak drogowy), nie mylić z kodem ograniczenia towaru poniżej — dopiero zestawienie obu (kod towaru z Tabeli A × kategoria konkretnego tunelu z bazy tuneli) daje odpowiedź „czy ten ładunek wjedzie do tego tunelu”.",
+  "kody_ograniczen_towaru": {
+    "B": "Zakaz przewozu przez tunele kategorii B, C, D i E.",
+    "B1000C": "Masa netto materiałów wybuchowych na jednostkę transportową > 1000 kg: zakaz B/C/D/E. ≤ 1000 kg: zakaz C/D/E.",
+    "B/D": "Przewóz w cysternie: zakaz B/C/D/E. Inny przewóz: zakaz D/E.",
+    "B/E": "Przewóz w cysternie: zakaz B/C/D/E. Inny przewóz: zakaz E.",
+    "C": "Zakaz przewozu przez tunele kategorii C, D i E.",
+    "C5000D": "Masa netto materiałów wybuchowych na jednostkę transportową > 5000 kg: zakaz C/D/E. ≤ 5000 kg: zakaz D/E.",
+    "C/D": "Przewóz w cysternie: zakaz C/D/E. Inny przewóz: zakaz D/E.",
+    "C/E": "Przewóz w cysternie: zakaz C/D/E. Inny przewóz: zakaz E.",
+    "D": "Zakaz przewozu przez tunele kategorii D i E.",
+    "D/E": "Przewóz luzem lub w cysternie: zakaz D/E. Inny przewóz: zakaz E.",
+    "E": "Zakaz przewozu przez tunele kategorii E.",
+    "-": "Dozwolony przewóz przez wszystkie tunele (wyjątki dla UN 2919 i UN 3331 — warunki specjalne)."
+  },
+  "reguly": {
+    "ladunek_mieszany": "Jeśli w jednostce transportowej są towary z różnymi kodami ograniczeń, do całego ładunku stosuje się kod odpowiadający NAJWIĘKSZYM ograniczeniom.",
+    "wylaczenia_1_1_3_6": "Towary zwolnione na podstawie 1.1.3.6 (patrz transportCategory) nie podlegają ograniczeniom tunelowym i nie liczą się przy ustalaniu kodu dla całego ładunku (poza przypadkiem wymaganego oznakowania wg 3.4.13)."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "_source": "ADR 2.1.1.1 — list of dangerous goods classes (API field: hazardClass)",
+  "classes": {
+    "1": "Explosives and articles containing explosives",
+    "2": "Gases",
+    "3": "Flammable liquids",
+    "4.1": "Flammable solids, self-reactive substances, polymerizing substances and solid desensitized explosives",
+    "4.2": "Substances liable to spontaneous combustion",
+    "4.3": "Substances which, in contact with water, emit flammable gases",
+    "5.1": "Oxidizing substances",
+    "5.2": "Organic peroxides",
+    "6.1": "Toxic substances",
+    "6.2": "Infectious substances",
+    "7": "Radioactive material — EXCLUDED FROM ANALYSES (exceptionally complex class; source recommendation: model responses limited in scope)",
+    "8": "Corrosive substances",
+    "9": "Miscellaneous dangerous substances and articles"
+  }
+}

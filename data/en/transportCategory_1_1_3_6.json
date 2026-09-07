@@ -1,0 +1,32 @@
+{
+  "_source": "ADR 1.1.3.6 (API field: transportCategory)",
+  "categories": {
+    "0": {
+      "limit_per_transport_unit": 0,
+      "description": "Substances/articles presenting the highest risk — practically no exemption available (including Class 1: 1.1A/1.1L/1.2L/1.3L, UN 0190; Class 3: UN 3343; Class 4.2 packing group I; selected UN entries of Classes 4.3/5.1/6.1/6.2/7/8/9; empty, uncleaned packagings that contained these substances, except UN 2908)."
+    },
+    "1": {
+      "limit_per_transport_unit": 20,
+      "note": "For selected UN entries (0081, 0082, 0084, 0241, 0331, 0332, 0482, 1005, 1017) the limit is 50 kg instead of 20.",
+      "description": "Packing group I substances/articles not assigned to category 0, plus selected classes (1.1B-1.1J, 1.2B-1.2J, 1.3C/G/H/J, 1.5D; Class 2 groups T/TC/TO/TF/TOC/TFC; aerosols of the corresponding groups; selected UN entries of Classes 4.1/5.2)."
+    },
+    "2": {
+      "limit_per_transport_unit": 333,
+      "description": "Packing group II substances not assigned to category 0/1/4, plus selected classes (1.4B-1.4G, 1.6N; Class 2 group F; group F aerosols; selected UN entries of Classes 4.1/4.3/5.1/5.2/6.1/6.2/9)."
+    },
+    "3": {
+      "limit_per_transport_unit": 1000,
+      "description": "Packing group III substances not assigned to category 0/2/4, plus selected classes (Class 2 groups A/O; groups A/O aerosols; selected UN entries of Classes 3/4.3/8/9)."
+    },
+    "4": {
+      "limit_per_transport_unit": "unlimited",
+      "description": "Includes Class 1.4S; selected UN entries covering nearly all low-risk classes; empty, uncleaned packagings that contained substances not assigned to category 0."
+    }
+  },
+  "rules": {
+    "single_category": "If all goods on the transport unit belong to the same category, simply compare the sum of their quantities against that category's limit (see table above).",
+    "mixed_categories": "If goods belong to different categories, calculate: (category 1 quantity x 50) + (category 1 quantity with footnote a x 20) + (category 2 quantity x 3) + (category 3 quantity x 1) — the sum must not exceed 1000. Category 0 excludes this exemption entirely (limit 0); category 4 is not counted (no limit).",
+    "quantity_units": "Articles: net mass of explosive substance, or mass of the article, in kg; solids/liquefied, refrigerated liquefied or dissolved gases: net mass in kg; liquids: volume in litres; compressed/adsorbed gases or chemicals under pressure: water capacity of the receptacle in litres.",
+    "exemption_effect": "Below the threshold, exemption applies (among others) from: Chapter 1.10 (except where noted), Chapter 5.3 (placards/marks), 5.4.3, Chapter 7.2 (except V5/V8), CV1, most of Chapter 8, and the whole of Part 9."
+  }
+}

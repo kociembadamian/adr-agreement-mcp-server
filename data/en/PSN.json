@@ -1,0 +1,31 @@
+{
+  "_source": "ADR 3.2/5.4 (API fields: unNumber, name, nameEn, hazardClass, packingGroup, labels, tunnelCode)",
+  "entry_construction": {
+    "order": "UN <number> <NAME IN CAPITAL LETTERS>, <class> (<subsidiary hazard, if any>), <packing group or \"PG <group>\">, (<tunnel restriction code>)",
+    "example": "UN 1098 ALLYL ALCOHOL, 6.1 (3), I, (C/D)  —  or with \"PG\": UN 1098 ALLYL ALCOHOL, 6.1 (3), PG I, (C/D)",
+    "mandatory_element_order": "UN number, proper shipping name, class/classification code(s) or label(s), packing group, tunnel code — in this order, with no additional information inserted between them (except where ADR expressly permits it)."
+  },
+  "name_source": {
+    "own_specific_un_number": "If the substance has its own specific UN entry, the name given in column (2) of Table A is used directly as the proper shipping name.",
+    "generic_or_n_o_s_entry": "If the substance has no specific UN entry, the applicable generic or N.O.S. (not otherwise specified) entry is used (determined via the classification decision trees in Part 2), followed where needed by a descriptive qualifier in lower-case letters if the entry covers materials with differing classification or carriage conditions."
+  },
+  "class_and_label_elements": {
+    "class_1": "The classification code (division + compatibility group) is used instead of the class number; additional label numbers (other than 1/1.4/1.5/1.6) are shown in parentheses after the code.",
+    "class_7": "Only the class number \"7\" is used (not a classification code).",
+    "batteries_un_3090_3091_3480_3481_3551_3552_and_vehicles_3556_3557_3558": "The class number \"9\" is used.",
+    "other_classes": "The label numbers from column (5) are used, plus any additional labels required by the special provision in column (6); the first label number is shown without brackets, subsequent ones in brackets; if no label number applies, the class number is used instead."
+  },
+  "packing_group_notation": "Preceded by the letters \"PG\" (e.g. \"PG II\") or shown without a prefix — both forms are acceptable.",
+  "name_modifiers": {
+    "_note": "These are additions that must be APPENDED to the proper shipping name or entered on the transport document in specific situations — the tool should be able to indicate which modifier applies to a given item.",
+    "WASTE": "Placed before the name when carrying waste containing dangerous goods (other than radioactive waste) — unless the word already forms part of the name. Variant: \"WASTE IN ACCORDANCE WITH 2.1.3.5.5\".",
+    "ELEVATED_TEMPERATURE": "Used (as \"ELEVATED TEMPERATURE LIQUID/SOLID, N.O.S.\" or an equivalent qualifier) when a liquid is carried at or above 100°C, or a solid at or above 240°C, and the proper shipping name does not already convey the elevated-temperature condition (e.g. via \"MOLTEN\" or a dedicated elevated-temperature entry such as UN 3256/3257/3258).",
+    "STABILIZED": "Appended to the name when the substance requires stabilization and this is not already reflected in the name.",
+    "CONTROL_TEMPERATURE": "Appended when stabilization is achieved through temperature control (alone or combined with chemical stabilization); the transport document must additionally show the values as \"CONTROL TEMPERATURE: ... °C, EMERGENCY TEMPERATURE: ... °C\".",
+    "MOLTEN": "For a solid substance consigned for carriage in the molten state, if this is not already reflected in the name.",
+    "ENVIRONMENTALLY_HAZARDOUS_SUBSTANCE_MARINE_POLLUTANT": "Additional notation required when a Class 1-9 substance meets the criteria of 2.2.9.1.10 (subject to the exemptions for UN 3077/3082 and 5.2.1.8.1).",
+    "EMPTY_UNCLEANED_variants": "Various wording variants used for empty, uncleaned packagings/tanks/vehicles — they replace the full description of the goods; see 5.4.1.1.6.x in the ADR text for the full set of variants (omitted here due to their number).",
+    "SALVAGE_PACKAGING_SALVAGE_PRESSURE_RECEPTACLE": "Appended after the description of the goods when a salvage packaging or salvage pressure receptacle has been used."
+  },
+  "mixed_packing_of_class_1_goods": "When a single package contains two different Class 1 goods, the transport document must show the UN numbers and names of both (in capital letters); for more than two goods (under MP1, MP2, MP20-MP24) the entry \"GOODS OF UN NUMBERS ...\" is used instead."
+}

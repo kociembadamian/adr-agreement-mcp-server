@@ -1,0 +1,12 @@
+{
+  "_source": "ADR 9.1.1.2 (API field: vehicle)",
+  "types": {
+    "EX/II": "Vehicle intended for the carriage of explosives and articles containing explosives (Class 1) — lower structural category than EX/III.",
+    "EX/III": "Vehicle intended for the carriage of explosives and articles containing explosives (Class 1) — higher structural category.",
+    "FL": "Vehicle for the carriage of: (a) liquids with a flash point ≤60°C in tanks >1m³ / tank-containers >3m³, (b) flammable gases in equivalent tanks, (c) a battery-vehicle for flammable gases >1m³, (d) hydrogen peroxide >60% (UN 2015) in tanks >1m³.",
+    "AT": "Vehicle other than EX/III, FL, MEMU — for the carriage of other dangerous goods in fixed/demountable tanks >1m³ or tank-containers/portable tanks/MEGCs >3m³; or a battery-vehicle (other than FL) >1m³.",
+    "MEMU": "Mobile unit for the manufacture of explosives on site."
+  },
+  "note_OX": "The historical OX vehicle type (for the carriage of hydrogen peroxide) is no longer used in the current classification, but such vehicles may still exist on the market — a very narrow scope of application (peroxides).",
+  "approval": "Compliance of EX/II, EX/III, FL, AT and MEMU vehicles with Part 9 of ADR is confirmed by a certificate of approval issued by the competent authority of the country of registration, valid for a maximum of 1 year, renewed after an annual technical inspection."
+}

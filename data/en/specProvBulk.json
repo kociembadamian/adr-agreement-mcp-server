@@ -1,0 +1,9 @@
+{
+  "_source": "ADR 7.3.2.1 — special provisions concerning carriage in bulk containers (API field: specProvBulk, Table A column 10)",
+  "bk_codes": {
+    "BK1": "Carriage in bulk permitted in sheeted bulk containers.",
+    "BK2": "Carriage in bulk permitted in closed bulk containers.",
+    "BK3": "Carriage in bulk permitted in flexible bulk containers."
+  },
+  "_note": "These are the three basic bulk-container codes; Chapter 7.3.3 additionally contains detailed special provisions VV/AP for specific substances carried in bulk — not reproduced here (outside the scope of the sample source record, in which the specProvBulk field was empty)."
+}

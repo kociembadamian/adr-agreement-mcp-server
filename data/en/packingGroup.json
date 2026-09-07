@@ -1,0 +1,9 @@
+{
+  "_source": "ADR 2.1.1.3 (API field: packingGroup)",
+  "_note": "Applies to classes other than 1, 2, 5.2, 6.2, 7, and to substances of Class 4.1 other than self-reactive substances. Articles are not assigned a packing group — for them, requirements are given by the packing instruction.",
+  "groups": {
+    "I": "Substances presenting high danger",
+    "II": "Substances presenting medium danger",
+    "III": "Substances presenting low danger"
+  }
+}

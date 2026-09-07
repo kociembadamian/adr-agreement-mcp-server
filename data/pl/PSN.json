@@ -1,0 +1,31 @@
+{
+  "_source": "ADR 3.2/5.4 (pola API: unNumber, name, nameEn + hazardClass, packingGroup, labels, tunnelCode)",
+  "budowa_wpisu": {
+    "kolejnosc": "UN <numer> <NAZWA WIELKIMI LITERAMI>, <klasa> (<zagrożenie dodatkowe, jeśli jest>), <grupa pakowania albo „GP <grupa>”>, (<kod ograniczeń tunelowych>)",
+    "przyklad": "UN 1098 ALKOHOL ALLILOWY, 6.1 (3), I, (C/D)  —  albo z „GP”: UN 1098 ALKOHOL ALLILOWY, 6.1 (3), GP I, (C/D)",
+    "kolejnosc_elementow_obowiazkowa": "numer UN, nazwa, klasa/kod klasyfikacyjny(-e nalepki), grupa pakowania, kod tunelowy — w tej kolejności, bez dodatkowych informacji pomiędzy nimi (poza dopuszczonymi przez ADR)."
+  },
+  "zrodlo_nazwy": {
+    "wlasny_numer_UN": "Jeśli materiał ma własny, szczegółowy numer UN — używa się jego nazwy z kolumny (2) wprost jako nazwy przewozowej.",
+    "pozycja_ogolna_INO": "Jeśli materiał nie ma własnego numeru — używa się nazwy pozycji ogólnej lub I.N.O. (do której zaliczono materiał na podstawie 'drzew decyzyjnych' części 2), z opisem wyjaśniającym małymi literami po nazwie, jeśli dla pozycji występuje zróżnicowanie klasyfikacji/warunków przewozu."
+  },
+  "elementy_klasy_i_nalepek": {
+    "klasa_1": "kod klasyfikacyjny (podklasa+grupa zgodności) zamiast numeru klasy; dodatkowe wzory nalepek (poza 1/1.4/1.5/1.6) w nawiasie po kodzie",
+    "klasa_7": "sam numer klasy „7” (nie kod klasyfikacyjny)",
+    "baterie_UN_3090_3091_3480_3481_3551_3552_oraz_pojazdy_3556_3557_3558": "numer klasy „9”",
+    "pozostale_klasy": "numery wzorów nalepek z kolumny (5) + dodatkowe z przepisu szczególnego w kolumnie (6); pierwszy numer bez nawiasu, kolejne w nawiasach; brak numeru nalepki → używa się numeru klasy"
+  },
+  "grupa_pakowania_w_zapisie": "poprzedzona literami „PG”/„GP” (np. „GP II”) lub bez przedrostka — obie formy dopuszczalne",
+  "modyfikatory_dopisywane_do_nazwy": {
+    "_note": "To są zapisy, które trzeba DOPISAĆ do prawidłowej nazwy przewozowej lub do dokumentu przewozowego w konkretnych sytuacjach — narzędzie powinno umieć wskazać, który dopisek ma zastosowanie dla danego towaru.",
+    "ODPAD": "Przed nazwą, gdy przewożone są odpady zawierające towary niebezpieczne (inne niż promieniotwórcze) — chyba że słowo już jest częścią nazwy. Warianty: „ODPAD ZGODNY Z 2.1.3.5.5”.",
+    "GORĄCY": "Bezpośrednio przed nazwą, gdy materiał ciekły przewożony ≥100°C lub stały ≥240°C, a nazwa nie zawiera już informacji o podwyższonej temperaturze (np. „TEMPERATURA PODWYŻSZONA”, „STOPIONY”).",
+    "STABILIZOWANY": "Dopisywane do nazwy, jeśli materiał wymaga stabilizacji, a nie jest to już częścią nazwy.",
+    "TEMPERATURA KONTROLOWANA": "Dopisywane, gdy stabilizacja odbywa się przez kontrolę temperatury (samo)/w kombinacji ze stabilizacją chemiczną; w dokumencie dodatkowo podaje się wartości: „TEMPERATURA KONTROLOWANA: ... °C, TEMPERATURA AWARYJNA: ... °C”.",
+    "STOPIONY": "Dla materiału stałego nadawanego do przewozu w stanie stopionym, jeśli nie jest to już częścią nazwy.",
+    "ZAGRAŻAJĄCY ŚRODOWISKU / MARINE POLLUTANT": "Dodatkowy zapis, gdy materiał klasy 1–9 spełnia kryteria 2.2.9.1.10 (poza wyjątkami dla UN 3077/3082 i 5.2.1.8.1).",
+    "PRÓŻNE_NIEOCZYSZCZONE_wersje": "Różne warianty zapisów dla pustych nieoczyszczonych opakowań/cystern/pojazdów — zastępują pełny opis towaru, patrz 5.4.1.1.6.x w traktacie po szczegóły (pominięte tu ze względu na dużą liczbę wariantów).",
+    "OPAKOWANIE_AWARYJNE / NACZYNIE CIŚNIENIOWE AWARYJNE": "Dopisywane po opisie towaru, gdy użyto opakowania/naczynia awaryjnego."
+  },
+  "przy_pakowaniu_razem_klasa_1": "Gdy w jednej sztuce przesyłki są dwa różne towary klasy 1 — w dokumencie podaje się numery UN i nazwy obu (wielkimi literami); przy więcej niż dwóch towarach (wg MP1, MP2, MP20–MP24) — zapis „TOWARY O NUMERACH UN ...”."
+}

@@ -1,0 +1,30 @@
+{
+  "_source": "ADR 4.1.10.4 — special provisions on mixed packing of goods in the same package (API field: mixedPacking, Table A column 9b)",
+  "mp_codes": {
+    "MP1": "May only be packed together with goods of the same type within the same compatibility group.",
+    "MP2": "Shall not be packed together with other goods.",
+    "MP3": "Mixed packing of UN 1873 with UN 1802 is permitted.",
+    "MP4": "Shall not be packed together with goods of other classes or with goods not subject to ADR — exception: where this organic peroxide is a hardener or component of a kit with Class 3 substances, it may be packed together with those substances.",
+    "MP5": "UN 2814 and UN 2900 may be packed together in a combination packaging conforming to P620; not to be combined with other goods, except UN 3373 (Biological substance, Category B, packed per P650) and coolants (ice, dry ice, refrigerated liquid nitrogen).",
+    "MP6": "Shall not be packed together with other goods, except coolants (ice, dry ice, refrigerated liquid nitrogen).",
+    "MP7": "Up to 5 l per inner packaging (combination packagings per 6.1.4.21) — may be packed with goods of the same class bearing a different classification code (if mixed packing is also permitted for them) or with goods not subject to ADR, provided no dangerous reaction occurs.",
+    "MP8": "As MP7, but with a limit of 3 l per inner packaging.",
+    "MP9": "Outer packagings for combination packagings per 6.1.4.21 — may be combined with other Class 2 goods, with goods of other classes (if permitted for them), or with goods not subject to ADR, provided no dangerous reaction occurs.",
+    "MP10": "Up to 5 kg per inner packaging — may be combined with goods of the same class (different code) or other classes (if permitted), or with goods not subject to ADR, provided no dangerous reaction occurs.",
+    "MP11": "As MP10, limit 5 kg, but Class 5.1 packing group I/II substances may not be combined.",
+    "MP12": "Same as MP11 (up to 5 kg per inner packaging, excluding Class 5.1 packing group I/II); additionally the package mass is limited to <=45 kg (<=27 kg where a fibreboard box is used as the outer packaging).",
+    "MP13": "Up to 3 kg per inner packaging — may be combined with goods of the same class (different code) or other classes (if permitted), or with goods not subject to ADR, provided no dangerous reaction occurs.",
+    "MP14": "As MP13, but with a limit of 6 kg per inner packaging.",
+    "MP15": "As MP13, but with a limit of 3 l per inner packaging (for liquids).",
+    "MP16": "(Reserved)",
+    "MP17": "Up to 0.5 l per inner packaging and 1 l per package — may be combined with goods of other classes except Class 7 (if permitted) or with goods not subject to ADR, provided no dangerous reaction occurs.",
+    "MP18": "As MP17, but with mass limits of 0.5 kg per inner packaging and 1 kg per package.",
+    "MP19": "Up to 5 l per inner packaging — may be combined with goods of the same class (different code) or other classes (if permitted), or with goods not subject to ADR, provided no dangerous reaction occurs.",
+    "MP20": "May be packed together only with goods bearing the same UN number; not to be combined with Class 1 goods of other UN numbers (except as provided under MP24); not to be combined with other classes or with goods not subject to ADR.",
+    "MP21": "May be packed together with articles bearing the same UN number; may be combined with Class 1 substances/articles of other UN numbers only in the case of: means of initiation of the same type (with accidental initiation excluded, or fitted with at least two protective features, or with competent-authority approval for compatibility group B) or articles of compatibility groups C/D/E; not to be combined with other classes or with goods not subject to ADR; the possible change in package classification (2.2.1.1) must be taken into account.",
+    "MP22": "As MP21, but without the competent-authority approval option for compatibility group B means of initiation — only: means of initiation of the same type (with accidental initiation excluded), articles of compatibility groups C/D/E, or the case covered by MP24; not to be combined with other classes or with goods not subject to ADR; the possible change in package classification must be taken into account.",
+    "MP23": "As MP21/MP22, but only: means of initiation of the same type (with accidental initiation excluded), or the case covered by MP24; not to be combined with other classes or with goods not subject to ADR; the possible change in package classification must be taken into account.",
+    "MP24": "Mixed packing per the table of UN number pairs, with two levels: letter \"A\" = no mass restriction; letter \"B\" = total mass of explosive substances in the package <=50 kg (the specific table of UN number pairs has not been reproduced here — too extensive/tabular, consult the ADR source for details); the possible change in package classification must be taken into account."
+  },
+  "_note": "MP1-MP19 apply mainly to non-Class 1 goods (mixed packing of different goods in limited quantities per inner packaging); MP20-MP24 apply specifically to Class 1 substances and articles (explosives), where matching UN numbers and compatibility groups is the key criterion rather than mass limits alone."
+}

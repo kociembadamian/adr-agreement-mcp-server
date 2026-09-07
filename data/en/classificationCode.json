@@ -1,0 +1,161 @@
+{
+  "_source": "ADR 2.2 — classification code systems per class (API field: classificationCode). This is NOT a 1:1 lookup — the code must be decoded according to the goods' class (hazardClass).",
+  "class_1": {
+    "_note": "The Class 1 classification code = division (1.1-1.6) + compatibility group letter (A-S), e.g. '1.1D'.",
+    "divisions": {
+      "1.1": "Mass explosion hazard (affecting almost the entire load virtually instantaneously)",
+      "1.2": "Projection hazard but not a mass explosion hazard",
+      "1.3": "Fire hazard and either a minor blast hazard or a minor projection hazard or both, but not a mass explosion hazard",
+      "1.4": "No significant hazard beyond the package in case of ignition or initiation — effects largely confined to the package",
+      "1.5": "Very insensitive substances with a mass explosion hazard, but with a low probability of initiation",
+      "1.6": "Extremely insensitive articles with no mass explosion hazard"
+    },
+    "compatibility_groups": {
+      "A": "Primary explosive substance",
+      "B": "Article containing a primary explosive substance and not having two or more effective protective features (e.g. detonators, primers)",
+      "C": "Propellant explosive substance or other deflagrating explosive substance, or article containing such a substance",
+      "D": "Secondary detonating explosive substance or black powder (without its own means of initiation and without a propelling charge), or article containing a primary explosive substance and having two or more effective protective features",
+      "E": "Article containing a secondary detonating explosive substance, without its own means of initiation, with a propelling charge (other than one containing flammable liquid, gel or hypergolic liquids)",
+      "F": "Article containing a secondary detonating explosive substance with its own means of initiation, with a propelling charge (other than one containing flammable liquid or gel or hypergolic liquids) or without a propelling charge",
+      "G": "Pyrotechnic substance, or article containing a pyrotechnic substance, or article containing both an explosive substance and an illuminating, incendiary, tear- or smoke-producing substance",
+      "H": "Article containing both an explosive substance and white phosphorus",
+      "J": "Article containing both an explosive substance and a flammable liquid or gel",
+      "K": "Article containing both an explosive substance and a toxic chemical agent",
+      "L": "Explosive substance or article containing an explosive substance presenting a special risk (e.g. water-activated, hypergolic liquids, phosphides, pyrophoric substances) requiring isolation of each type",
+      "N": "Articles containing predominantly extremely insensitive detonating substances",
+      "S": "Substance or article packaged or designed so that any hazardous effects of accidental functioning are confined within the package"
+    }
+  },
+  "class_2": {
+    "_note": "Groups by hazardous properties (excluding aerosols and pressurized chemicals under separate special provisions).",
+    "groups": {
+      "A": "Asphyxiant",
+      "O": "Oxidizing",
+      "F": "Flammable",
+      "T": "Toxic",
+      "TF": "Toxic, flammable",
+      "TC": "Toxic, corrosive",
+      "TO": "Toxic, oxidizing",
+      "TFC": "Toxic, flammable, corrosive",
+      "TOC": "Toxic, oxidizing, corrosive"
+    }
+  },
+  "class_3": {
+    "F": "Flammable liquids, with no subsidiary hazard",
+    "F1": "Flash point ≤ 60°C",
+    "F2": "Flash point > 60°C, carried or offered for carriage at or above their flash point (elevated temperature)",
+    "F3": "Articles containing flammable liquids",
+    "FT": "Flammable liquids, toxic",
+    "FT1": "Flammable liquids, toxic",
+    "FT2": "Pesticides",
+    "FC": "Flammable liquids, corrosive",
+    "FTC": "Flammable liquids, toxic, corrosive",
+    "D": "Desensitized liquid explosives"
+  },
+  "class_4_1": {
+    "F": "Flammable solids, with no subsidiary hazard",
+    "F1": "Organic substances",
+    "F2": "Organic substances, molten",
+    "F3": "Inorganic substances",
+    "F4": "Articles",
+    "FO": "Flammable solids, oxidizing",
+    "FT": "Flammable solids, toxic",
+    "FT1": "Organic substances, toxic",
+    "FT2": "Inorganic substances, toxic",
+    "FC": "Flammable solids, corrosive",
+    "FC1": "Organic substances, corrosive",
+    "FC2": "Inorganic substances, corrosive",
+    "D": "Desensitized solid explosives, with no subsidiary hazard",
+    "DT": "Desensitized solid explosives, toxic",
+    "SR": "Self-reactive substances",
+    "SR1": "Not requiring temperature control",
+    "SR2": "Requiring temperature control",
+    "PM": "Polymerizing substances",
+    "PM1": "Not requiring temperature control",
+    "PM2": "Requiring temperature control"
+  },
+  "class_4_2": {
+    "S": "Substances liable to spontaneous combustion, with no subsidiary hazard",
+    "S1": "Organic, liquid", "S2": "Organic, solid",
+    "S3": "Inorganic, liquid", "S4": "Inorganic, solid",
+    "S5": "Organometallic", "S6": "Articles",
+    "SW": "Liable to spontaneous combustion, emitting flammable gases in contact with water",
+    "SW1": "Substances", "SW2": "Articles",
+    "SO": "Liable to spontaneous combustion, oxidizing",
+    "ST": "Liable to spontaneous combustion, toxic",
+    "ST1": "Organic, toxic, liquid", "ST2": "Organic, toxic, solid",
+    "ST3": "Inorganic, toxic, liquid", "ST4": "Inorganic, toxic, solid",
+    "SC": "Liable to spontaneous combustion, corrosive",
+    "SC1": "Organic, corrosive, liquid", "SC2": "Organic, corrosive, solid",
+    "SC3": "Inorganic, corrosive, liquid", "SC4": "Inorganic, corrosive, solid"
+  },
+  "class_4_3": {
+    "W": "Emits flammable gases in contact with water, with no subsidiary hazard",
+    "W1": "Liquid substances", "W2": "Solid substances", "W3": "Articles",
+    "WF1": "Liquid, flammable", "WF2": "Solid, flammable",
+    "WS": "Solid, self-heating", "WO": "Solid, oxidizing",
+    "WT": "Toxic", "WT1": "Liquid substances", "WT2": "Solid substances",
+    "WC": "Corrosive", "WC1": "Liquid substances", "WC2": "Solid substances",
+    "WFC": "Flammable, corrosive"
+  },
+  "class_5_1": {
+    "O": "Oxidizing substances, with no subsidiary hazard",
+    "O1": "Liquid substances", "O2": "Solid substances", "O3": "Articles",
+    "OF": "Solid, flammable", "OS": "Solid, self-heating", "OW": "Solid, emitting flammable gases in contact with water",
+    "OT": "Toxic", "OT1": "Liquid substances", "OT2": "Solid substances",
+    "OC": "Corrosive", "OC1": "Liquid substances", "OC2": "Solid substances",
+    "OTC": "Toxic, corrosive"
+  },
+  "class_5_2": {
+    "P1": "Organic peroxides not requiring temperature control",
+    "P2": "Organic peroxides requiring temperature control"
+  },
+  "class_6_1": {
+    "T": "Toxic, with no subsidiary hazard",
+    "T1": "Organic, liquid", "T2": "Organic, solid", "T3": "Organometallic",
+    "T4": "Inorganic, liquid", "T5": "Inorganic, solid",
+    "T6": "Liquid, pesticide", "T7": "Solid, pesticide",
+    "T8": "Samples", "T9": "Other toxic substances", "T10": "Articles",
+    "TF": "Toxic, flammable", "TF1": "Liquid substances", "TF2": "Liquid, pesticide",
+    "TF3": "Solid substances", "TF4": "Articles",
+    "TS": "Toxic, self-heating, solid",
+    "TW": "Toxic, emitting flammable gases in contact with water", "TW1": "Liquid substances", "TW2": "Solid substances",
+    "TO": "Toxic, oxidizing", "TO1": "Liquid substances", "TO2": "Solid substances",
+    "TC": "Toxic, corrosive", "TC1": "Organic, liquid", "TC2": "Organic, solid",
+    "TC3": "Inorganic, liquid", "TC4": "Inorganic, solid", "TC5": "Articles",
+    "TFC": "Toxic, flammable, corrosive", "TFW": "Toxic, flammable, emitting flammable gases in contact with water"
+  },
+  "class_6_2": {
+    "I1": "Infectious substances affecting humans",
+    "I2": "Infectious substances affecting animals only",
+    "I3": "Clinical or medical waste",
+    "I4": "Biological substances"
+  },
+  "class_7": {
+    "_note": "Deliberately excluded from analyses — exceptionally complex class (per source guidance); model responses limited in scope."
+  },
+  "class_8": {
+    "C1_C4": "Acidic substances (C1 inorganic liquid, C2 inorganic solid, C3 organic liquid, C4 organic solid)",
+    "C5_C8": "Basic substances (C5 inorganic liquid, C6 inorganic solid, C7 organic liquid, C8 organic solid)",
+    "C9": "Other corrosive liquid substances", "C10": "Other corrosive solid substances", "C11": "Articles",
+    "CF": "Corrosive, flammable", "CF1": "Liquid substances", "CF2": "Solid substances",
+    "CS": "Corrosive, self-heating", "CS1": "Liquid substances", "CS2": "Solid substances",
+    "CW": "Corrosive, emitting flammable gases in contact with water", "CW1": "Liquid substances", "CW2": "Solid substances",
+    "CO": "Corrosive, oxidizing", "CO1": "Liquid substances", "CO2": "Solid substances",
+    "CT": "Corrosive, toxic", "CT1": "Liquid substances", "CT2": "Solid substances", "CT3": "Articles",
+    "CFT": "Corrosive, flammable liquid, toxic", "COT": "Corrosive, oxidizing, toxic"
+  },
+  "class_9": {
+    "M1": "Substances inhaled as fine dust that may endanger health",
+    "M2": "Substances/articles which, in case of fire, may form dioxins",
+    "M3": "Substances emitting flammable vapours",
+    "M4": "Lithium batteries and sodium-ion batteries",
+    "M5": "Life-saving appliances",
+    "M6": "Environmentally hazardous substances, liquid",
+    "M7": "Environmentally hazardous substances, solid",
+    "M8": "Genetically modified microorganisms and organisms",
+    "M9": "Elevated-temperature substances, liquid",
+    "M10": "Elevated-temperature substances, solid",
+    "M11": "Other substances/articles presenting a danger during carriage but not meeting the other definitions"
+  }
+}

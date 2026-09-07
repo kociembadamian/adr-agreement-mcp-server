@@ -1,0 +1,44 @@
+{
+  "_source": "ADR 4.3.3/4.3.4 (pole API: adrTankCode, kolumna 12 tabeli A) — CZĘŚCIOWO POMINIĘTE zgodnie z ustaleniami: pełne, bardzo obszerne tabele „zastosowania racjonalnego” (przypisanie każdej kombinacji klasa/kod klasyfikacyjny/grupa pakowania do konkretnego kodu cysterny) NIE zostały odtworzone w całości — zbyt duża objętość tabelaryczna. Odtworzono natomiast strukturę dekodowania kodu, regułę hierarchii oraz kompletną listę materiałów z indywidualnie przypisanym kodem cysterny (oznaczonych „(+)” w kolumnie 12).",
+  "budowa_kodu": {
+    "opis": "Kod cysterny ADR składa się z 4 części w stałej kolejności, np. „L4BH”.",
+    "czesc_1_typ": {"L": "cysterny dla materiałów ciekłych (lub stałych przewożonych w stanie stopionym)", "S": "cysterny dla materiałów stałych (sypkich/granulowanych)"},
+    "czesc_2_cisnienie_obliczeniowe": {"G": "minimalne ciśnienie obliczeniowe wg ogólnych wymagań 6.8.2.1.14", "wartosci_barow": "1,5 / 2,65 / 4 / 10 / 15 / 21 — minimalne ciśnienie obliczeniowe w barach"},
+    "czesc_3_otwory": {"A": "dolne otwory do napełniania/rozładunku, 2 zamknięcia", "B": "dolne otwory, 3 zamknięcia", "C": "górne otwory do napełniania i rozładunku, tylko otwory wyczystkowe poniżej powierzchni cieczy", "D": "górne otwory, bez otworów poniżej powierzchni cieczy"},
+    "czesc_4_zawory_urzadzenia_bezpieczenstwa": {"V": "urządzenie oddechowe wg 6.8.2.2.6, bez zabezpieczenia przed rozprzestrzenianiem płomienia lub cysterna nieodporna na ciśnienie wybuchu", "F": "urządzenie oddechowe wg 6.8.2.2.6 z zabezpieczeniem przed rozprzestrzenianiem płomienia lub cysterna odporna na ciśnienie wybuchu", "N": "bez urządzenia oddechowego wg 6.8.2.2.6, niehermetyczna", "H": "cysterna zamknięta hermetycznie (1.2.1)"}
+  },
+  "hierarchia_cystern": {
+    "regula": "Cysterna o innym kodzie niż wskazany dla danego materiału może być użyta, jeśli każda z 4 części kodu odpowiada poziomowi bezpieczeństwa co najmniej równoważnemu (lub wyższemu) wg rosnącej hierarchii poniżej — nie uwzględnia to jednak przepisów szczególnych dla poszczególnych pozycji (patrz 4.3.5, 6.8.4).",
+    "czesc_1": "S → L",
+    "czesc_2": "G → 1,5 → 2,65 → 4 → 10 → 15 → 21 barów",
+    "czesc_3": "A → B → C → D",
+    "czesc_4": "V → F → N → H",
+    "przyklad": "cysterna L10CN dopuszczona jest do materiału wymagającego L4BN; cysterna L4BN dopuszczona jest do materiału wymagającego SGAN."
+  },
+  "przypisania_indywidualne_plus": {
+    "_opis": "Materiały oznaczone „(+)” w kolumnie 12 tabeli A — mają indywidualnie przypisany, obowiązkowy kod cysterny; alternatywne cysterny dozwolone tylko jeśli wyszczególnione w świadectwie zatwierdzenia typu, lub cysterny o wyższej wartości kodu wg hierarchii + przepisy szczególne z kolumny 13.",
+    "przyklady_UN": {
+      "UN 0331": "Materiał wybuchowy kruszący typu B — S2.65AN",
+      "UN 2448 (siarka stopiona)": "LGBV",
+      "UN 3531/3533 (materiał polimeryzujący stały stab./temp.kontr. i.n.o.)": "SGAN",
+      "UN 3532/3534 (materiał polimeryzujący ciekły stab./temp.kontr. i.n.o.)": "L4BN",
+      "UN 1381/2447 (fosfor biały/żółty pod wodą/roztwór/stopiony)": "L10DH",
+      "UN 1389,1391,1392,1415,1420,1421,1422,1428,2257 (metale/amalgamaty/dyspersje alkaliczne ciekłe)": "L10BN",
+      "UN 3401,3402,3403,3404,3482 (amalgamaty/stopy/dyspersje stałe)": "L10CH",
+      "UN 1407 cez, UN 1423 rubid": "L10CH",
+      "UN 1402 węglik wapnia GP I": "S2.65AN",
+      "UN 1873 kwas nadchlorowy 50-72%": "L4DN",
+      "UN 2015 nadtlenek wodoru stabilizowany >70%": "L4DV (lub L4BV — patrz warianty w tabeli źródłowej)",
+      "UN 2014 nadtlenek wodoru 20-60%, UN 2426, UN 3149, UN 3375 (ciekły)": "L4BV / LGAV (wg konkretnej pozycji)",
+      "UN 3375 azotan amonu emulsja/zawiesina/żel stały": "SGAV",
+      "UN 3109/3119 nadtlenek organiczny typu F ciekły": "L4BN",
+      "UN 3110/3120 nadtlenek organiczny typu F stały": "S4AN",
+      "UN 1613/3294 kwas cyjanowodorowy roztwór": "L15DH",
+      "klasa_7 (materiał promieniotwórczy)": "cysterny specjalne; minimalne wymagania: ciecze L2.65CN, materiały stałe S2.65AN (cysterny do materiału promieniotwórczego mogą być też używane do innych towarów pod warunkami 5.1.3.2)",
+      "UN 1052,1744,1790 (fluorowodór, brom, kwas fluorowodorowy >85%)": "L21DH",
+      "UN 1791,1908 (podchloryn/chloryn roztwór)": "L4BV"
+    },
+    "cysterny_do_odpadow_ciekłych": "Cysterny zgodne z działem 6.10 (dwa zamknięcia wg 6.10.3.2) — kod L4AH; jeśli umożliwiają przemienny przewóz cieczy i materiałów stałych — kod łączony L4AH+S4AH."
+  },
+  "_uwaga_zastosowanie_racjonalne": "Pominięto pełne tabele 4.3.4.1.2 przypisujące każdą kombinację klasa/kod klasyfikacyjny/grupa pakowania do konkretnego kodu cysterny (np. LGAV, LGBV, LGBF, L1,5BN, L4BN, L4BH, L10BH, L10CH, L10DH, L15CH, L21DH, SGAV, SGAN, SGAH, S4AH, S10AN, S10AH) — zbyt obszerne tabelaryczne dane. W praktyce: pole adrTankCode zwracane przez API już podaje właściwy/wymagany kod dla danego UN, więc te tabele są potrzebne głównie do weryfikacji alternatywnych cystern, co pokrywa reguła hierarchii powyżej."
+}

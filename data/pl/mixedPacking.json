@@ -1,0 +1,30 @@
+{
+  "_source": "ADR 4.1.10.4 — przepisy szczególne dotyczące pakowania razem do tej samej sztuki przesyłki (pole API: mixedPacking, kolumna 9b tabeli A)",
+  "kody_MP": {
+    "MP1": "Pakowanie razem tylko z towarami tego samego typu o tej samej grupie zgodności.",
+    "MP2": "Nie wolno pakować razem z innymi towarami.",
+    "MP3": "Dozwolone pakowanie razem UN 1873 z UN 1802.",
+    "MP4": "Nie wolno pakować razem z towarami innych klas ani z towarami niepodlegającymi ADR — wyjątek: nadtlenek organiczny jako utwardzacz/element zestawu z materiałami klasy 3 może być z nimi pakowany razem.",
+    "MP5": "UN 2814 i UN 2900 mogą być pakowane razem w opakowania kombinowane wg P620; zakaz łączenia z innymi towarami, poza UN 3373 (materiał biologiczny kat. B wg P650) i czynnikami chłodzącymi (lód, suchy lód, azot schłodzony skroplony).",
+    "MP6": "Nie wolno pakować razem z innymi towarami, poza czynnikami chłodzącymi (lód, suchy lód, azot schłodzony skroplony).",
+    "MP7": "Do 5 l/opakowanie wewnętrzne (opakowania kombinowane wg 6.1.4.21) — z towarami tej samej klasy o innych kodach klasyfikacyjnych (jeśli i dla nich dozwolone pakowanie razem) lub z towarami niepodlegającymi ADR, pod warunkiem braku niebezpiecznej reakcji.",
+    "MP8": "Jak MP7, limit do 3 l/opakowanie wewnętrzne.",
+    "MP9": "Opakowania zewnętrzne dla opakowań kombinowanych wg 6.1.4.21 — z innymi towarami klasy 2, z towarami innych klas (jeśli dozwolone dla nich) lub niepodlegającymi ADR, pod warunkiem braku niebezpiecznej reakcji.",
+    "MP10": "Do 5 kg/opakowanie wewnętrzne — z towarami tej samej klasy (inny kod) lub innych klas (jeśli dozwolone) lub niepodlegającymi ADR, bez niebezpiecznej reakcji.",
+    "MP11": "Jak MP10, limit 5 kg, ale z wyjątkiem materiałów klasy 5.1 GP I/II (nie mogą być łączone).",
+    "MP12": "Identyczne jak MP11 (do 5 kg/opak. wewn., z wyjątkiem klasy 5.1 GP I/II); dodatkowo limit masy sztuki przesyłki: ≤45 kg (≤27 kg przy skrzyniach tekturowych jako opakowaniu zewnętrznym).",
+    "MP13": "Do 3 kg/opakowanie wewnętrzne — z towarami tej samej klasy (inny kod) lub innych klas (jeśli dozwolone) lub niepodlegającymi ADR, bez niebezpiecznej reakcji.",
+    "MP14": "Jak MP13, limit 6 kg/opakowanie wewnętrzne.",
+    "MP15": "Jak MP13, limit 3 l/opakowanie wewnętrzne (materiały ciekłe).",
+    "MP16": "(Zarezerwowany)",
+    "MP17": "Do 0,5 l/opak. wewn. i 1 l/sztukę przesyłki — z towarami innych klas z wyjątkiem klasy 7 (jeśli dozwolone) lub niepodlegającymi ADR, bez niebezpiecznej reakcji.",
+    "MP18": "Jak MP17, limity wagowe: 0,5 kg/opak. wewn., 1 kg/sztukę przesyłki.",
+    "MP19": "Do 5 l/opakowanie wewnętrzne — z towarami tej samej klasy (inny kod) lub innych klas (jeśli dozwolone) lub niepodlegającymi ADR, bez niebezpiecznej reakcji.",
+    "MP20": "Pakowanie razem tylko z towarami o tym samym numerze UN; zakaz z klasą 1 o innych numerach UN (poza wyjątkiem wg MP24); zakaz z innymi klasami lub towarami niepodlegającymi ADR.",
+    "MP21": "Pakowanie razem z przedmiotami o tym samym numerze UN; z materiałami/przedmiotami klasy 1 o innych numerach UN tylko: własne środki inicjujące (wykluczone przypadkowe zadziałanie, lub ≥2 urządzenia ochronne, lub zgoda właściwej władzy dla grupy zgodności B) albo przedmioty grup zgodności C/D/E; zakaz z innymi klasami/towarami niepodlegającymi ADR; uwzględnić możliwą zmianę klasyfikacji sztuki przesyłki (2.2.1.1).",
+    "MP22": "Jak MP21, ale bez opcji zgody właściwej władzy dla środków inicjujących grupy B — tylko: własne środki inicjujące (wykluczone przypadkowe zadziałanie), przedmioty grup C/D/E, lub przypadek wg MP24; zakaz z innymi klasami/niepodlegającymi ADR; uwzględnić zmianę klasyfikacji.",
+    "MP23": "Jak MP21/22, ale tylko: własne środki inicjujące (wykluczone przypadkowe zadziałanie) lub przypadek wg MP24; zakaz z innymi klasami/niepodlegającymi ADR; uwzględnić zmianę klasyfikacji.",
+    "MP24": "Pakowanie razem wg tabeli numerów UN z dwoma poziomami: litera „A” = bez ograniczeń masy; litera „B” = łączna masa materiałów wybuchowych w sztuce przesyłki ≤50 kg (konkretna tabela par UN-UN nie została odtworzona — zbyt obszerna/tabelaryczna, wymaga sprawdzenia w źródle ADR); uwzględnić zmianę klasyfikacji sztuki przesyłki."
+  },
+  "_uwaga": "Kody MP1–MP19 dotyczą głównie materiałów spoza klasy 1 (pakowanie razem różnych towarów w limitowanych ilościach na opakowanie wewnętrzne); MP20–MP24 dotyczą specyficznie materiałów i przedmiotów klasy 1 (materiały/przedmioty wybuchowe), gdzie kluczowe jest dopasowanie numerów UN i grup zgodności, a nie tylko limity wagowe."
+}

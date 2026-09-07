@@ -1,0 +1,30 @@
+{
+  "_source": "ADR Chapter 3.3 — special provisions. PART 3 — numbers 365–396.",
+  "provisions": {
+    "365": "Instruments/articles containing mercury or gallium — see UN 3506 or 3554.",
+    "366": "Instruments/articles containing ≤1 kg of mercury or gallium are not subject to ADR.",
+    "367": "The proper shipping names 'paint related material' (and the corrosive/flammable/printing variants) may be used when the package contains both a paint and a paint related material of the relevant type together.",
+    "368": "Non-fissile or fissile-excepted uranium hexafluoride → UN 3507 or UN 2978.",
+    "369": "Toxic/corrosive radioactive material in an excepted package is classified under Class 6.1 with subsidiary radioactive and corrosive hazards.",
+    "370": "Uranium hexafluoride may be assigned to this entry only where the conditions of 2.2.7.2.4.1.2/.5/.5.2 are met (and 2.2.7.2.3.5 for fissile-excepted material); additional provisions in 5.1.3.2 etc.; the Class 7 label is not required.",
+    "371": "Applies only to ammonium nitrate containing >0.2% combustible material, or ≤0.2% with a positive result in Test Series 2; not applicable to entries with their own name in Table A (including ANFO).",
+    "372": "Articles containing a small pressure receptacle (≤0.5 l, ≤25 bar at 15°C, burst pressure ≥4× working pressure) and a discharge device — detailed design/testing requirements (fire, actuation) and manufacturer's documentation.",
+    "373": "Asymmetric capacitors >0.3 Wh: short-circuit protection, pressure relief venting, Wh marking, 95 kPa pressure resistance (if the electrolyte is dangerous); exemption thresholds up to 20 Wh with a 1.2 m drop test; neutron radiation detectors containing boron trifluoride (BF3) — detailed design/packing requirements and gas limits (13 g per detector, 52 g per package, 1 g exempted from ADR).",
+    "375": "Substances in packagings ≤5 l (liquids) / ≤5 kg (solids) are not subject to any other provisions of ADR beyond the basic packaging requirements of 4.1.1.1/.2/.4-8.",
+    "376": "Damaged or defective lithium/sodium-ion cells and batteries: carried per the rules for UN 3090/3091/3480/3481/3551/3552 minus special provision 230, packed per P908/LP904 (or P911/LP906 where there is a risk of violent disassembly), marked 'DAMAGED/DEFECTIVE...', transport document must state 'Carriage in accordance with special provision 376'.",
+    "377": "Cells/batteries for disposal or recycling (including with non-standard accumulators) — packed per P909, exempted from 2.2.9.1.7.1(a-g)/.2(a-f), marked 'LITHIUM BATTERIES FOR DISPOSAL' or 'FOR RECYCLING'.",
+    "378": "Radiation detectors containing gas in single-use receptacles (outside the scope of Chapter 6.2/P200) — design limits (≤50 bar, ≤12 l, strength 3-4× working pressure), 1.2 m drop test, transport document must state 'Carriage in accordance with special provision 378'; ≤50 ml is not subject to ADR.",
+    "379": "Anhydrous ammonia adsorbed/absorbed in dispensing systems is not subject to ADR under pressure conditions (<0.6/1/12 bar at 20/35/85°C), max 10 kg ammonia, receptacle design per ISO 11114-1.",
+    "382": "Polymeric beads (polystyrene, PMMA, other polymers) need not be classified if the U1 test shows no flammable vapours.",
+    "383": "Table-tennis balls made of celluloid, ≤3 g each, ≤500 g total per package, are not subject to ADR.",
+    "386": "Temperature-control stabilization: provisions 2.2.41.1.21, 7.1.7, V8, S4, Chapter 9.6; chemical stabilization: stability must be ensured at 50°C (45°C for portable tanks), taking into account various factors (capacity, insulation, duration of carriage, etc.).",
+    "387": "Batteries containing both primary lithium cells and secondary lithium-ion cells → UN 3090/3091; limits under special provision 188: ≤1.5 g lithium total, ≤10 Wh total.",
+    "388": "Vehicle classification by power source: UN 3166 (fuel cell/internal combustion engine on gas or flammable liquid, including hybrids), UN 3171 (wet batteries/sodium batteries), UN 3556/3557/3558 (lithium-ion/lithium-metal/sodium-ion batteries); definitions of vehicle and equipment; permanently installed integral components are exempted (except for the requirements applying to lithium/sodium-ion batteries); a damaged battery in a vehicle → special provision 667(c).",
+    "389": "Lithium-ion/lithium-metal batteries installed in a cargo transport unit to provide external power (not propulsion) → UN 3536; securing requirements, exemption from marking the batteries themselves, but the unit must carry placards/labels.",
+    "390": "A package containing batteries both installed in equipment and packed with equipment at the same time — marking and transport document must cover both types (UN 3091/UN 3481).",
+    "392": "Vehicle gaseous fuel storage systems (LPG/CNG/LNG/hydrogen) carried for disposal, recycling or repair — exempted from 4.1.4.1/Chapter 6.2 under conditions of conformity with standards (UN Regulations 67/110/115/134, ISO, etc.), leak-tightness, valve protection, filling ≤20%, and simplified documentation.",
+    "393": "Nitrocellulose must meet the criteria of the Bergmann-Junk test or the methyl violet paper test (Manual of Tests and Criteria, Appendix 10); Test 3(c) is not required.",
+    "395": "Applies only to Category A medical waste carried for disposal.",
+    "396": "Large, robust articles with connected gas cylinders (nitrogen/inert gas/compressed air) with open valves are permitted provided the pressure in the article is limited to 35 kPa by a regulator."
+  }
+}

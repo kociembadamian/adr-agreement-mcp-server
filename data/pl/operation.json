@@ -1,0 +1,29 @@
+{
+  "_source": "ADR dział 8.5 — wymagania dodatkowe dotyczące niektórych klas lub materiałów, przewóz/nadzorowanie pojazdów (pole API: operation, kolumna 19 tabeli A). W razie sprzeczności z działami 8.1–8.4, przepisy poniższe mają pierwszeństwo.",
+  "kody_S": {
+    "S1": "Klasa 1 (materiały/przedmioty wybuchowe) — pakiet wymagań: (1) równoważne szkolenie kierowcy może zastąpić kurs specjalistyczny; (2) możliwy obowiązek przewozu upoważnionego przedstawiciela władzy (na koszt przewoźnika); (3) zakaz palenia/ognia/otwartego płomienia (w tym e-papierosów) w pojeździe/pobliżu oraz podczas załadunku/rozładunku; (4) załadunek/rozładunek w miejscu publicznym — zakaz w obszarze zabudowanym bez zezwolenia, poza obszarem zabudowanym wymaga powiadomienia władz (poza przypadkami pilnej konieczności bezpieczeństwa), segregacja wg nalepek przy manipulowaniu w miejscu publicznym, odległość ≥50m między postojącymi pojazdami (nie dotyczy tej samej jednostki transportowej); (5) kolumny pojazdów — odległość ≥50m między jednostkami transportowymi, możliwe wymagania co do kolejności/składu; nadzorowanie (dział 8.4) wymagane powyżej progów masy netto materiału wybuchowego zależnych od podklasy/grupy zgodności (1.1/1.2/1.5: 0kg: zawsze nadzór; 1.3 grupa C: 0kg; 1.3 inne: 50kg; 1.4 (poza wyjątkami): 50kg; 1.6: 50kg; wybrane UN podklasy 1.4 [0104,0237,0255,0267,0289,0361,0365,0366,0440,0441,0455,0456,0500,0512,0513]: 0kg), przy ładunkach mieszanych stosuje się najniższy limit; (7) zamykanie pojazdów EX/II/EX/III uniemożliwiające dostęp osobom nieuprawnionym poza czasem załadunku/rozładunku.",
+    "S2": "Materiały zapalne ciekłe / gazy palne — zakaz wnoszenia do przedziału ładunkowego pojazdów zamkniętych (materiały o temp. zapłonu ≤60°C lub palne klasy 2) przenośnych urządzeń oświetleniowych innych niż iskrobezpieczne; zakaz ogrzewaczy spalinowych w pojazdach FL podczas załadunku/rozładunku; dla pojazdów FL — wymagane dobre połączenie elektryczne podwozia z ziemią i ograniczenie prędkości napełniania przed napełnianiem/opróżnianiem cysterny.",
+    "S3": "Materiały zakaźne — nie stosuje się wymagań kolumn (2),(3),(5) tabeli 8.1.4.1 oraz wymagań 8.3.4.",
+    "S4": "Patrz 7.1.7 (kontrola temperatury) — nie dotyczy materiałów z 3.1.2.6 stabilizowanych inhibitorami z TSR>50°C, chyba że temp. przewozu może przekroczyć 55°C (identyczna reguła jak V8).",
+    "S5": "[Klasa 7 — pominięte szczegółowo] Materiały promieniotwórcze w sztukach przesyłek wyłączonych (UN 2908, 2909, 2910, 2911) — zwolnienie z wymagań instrukcji pisemnych (8.1.2.1(b)) oraz 8.2.1, 8.3.1, 8.3.4.",
+    "S6": "[Klasa 7 — pominięte szczegółowo] Materiały promieniotwórcze przewożone inaczej niż w sztukach wyłączonych — zwolnienie z 8.3.1 dla pojazdów z nalepkami kategorii I-BIAŁEJ; zwolnienie z 8.3.4 gdy brak zagrożenia dodatkowego.",
+    "S7": "(Skreślony)",
+    "S8": "Przy >2000kg tych materiałów w jednostce transportowej — postoje służbowe unikają miejsc zamieszkałych/uczęszczanych (dłuższy postój tam tylko za zgodą władz).",
+    "S9": "Jak S8, ale bez progu masy — zawsze unikać postojów w pobliżu miejsc zamieszkałych/uczęszczanych (dłuższy postój tylko za zgodą władz).",
+    "S10": "Od kwietnia do października, podczas postoju — ochrona sztuk przesyłki przed słońcem (np. opończa ≥20cm nad ładunkiem), jeśli wymagają tego przepisy krajowe.",
+    "S11": "Równoważne szkolenie kierowcy (tematy 8.2.2.3.5) może zastąpić kurs specjalistyczny.",
+    "S12": "[Klasa 7] Zwolnienie ze szkolenia 8.2.1 gdy ≤10 sztuk przesyłki z materiałem promieniotwórczym, suma wskaźników transportowych ≤3, brak zagrożenia dodatkowego — mimo to wymagane podstawowe szkolenie o zagrożeniach radiacyjnych potwierdzone zaświadczeniem pracodawcy.",
+    "S13": "(Skreślony)",
+    "S14": "Nadzorowanie pojazdów (dział 8.4) — dla dowolnej ilości tych materiałów.",
+    "S15": "Jak S14 (dowolna ilość), ale zwolnienie gdy przedział ładunkowy zamknięty przed dostępem osób nieuprawnionych lub sztuki przesyłki inaczej zabezpieczone.",
+    "S16": "Nadzorowanie od progu >500kg; dodatkowo materiały wg 1.10.3 >500kg wymagają stałego nadzoru wg planu ochrony 1.10.3.2.",
+    "S17": "Nadzorowanie od progu >1000kg.",
+    "S18": "Nadzorowanie od progu >2000kg.",
+    "S19": "Nadzorowanie od progu >5000kg.",
+    "S20": "Nadzorowanie od progu >10000kg (sztuki przesyłki) lub >3000l (cysterny).",
+    "S21": "[Klasa 7] Nadzorowanie dla dowolnej masy materiału promieniotwórczego, ze zwolnieniem gdy: przedział zamknięty/zabezpieczony ORAZ poziom promieniowania na powierzchni pojazdu ≤5µSv/h; materiały wg 1.10.3 wymagają stałego nadzoru wg planu ochrony.",
+    "S22": "Nadzorowanie od progu >5000kg (towary zapakowane) lub >3000l (cysterny).",
+    "S23": "Nadzorowanie (cysterny/luz) od progu >3000kg lub >3000l.",
+    "S24": "Nadzorowanie od progu >100kg."
+  }
+}
