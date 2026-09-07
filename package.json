@@ -1,1 +1,37 @@
 
+{
+  "name": "adr-agreement-mcp-server",
+  "version": "0.1.0",
+  "description": "MCP server for handling ADR Agreement provisions for AI models / Serwer MCP do obsługi przepisów Umowy ADR dla modeli AI",
+  "main": "src/index.js",
+  "bin": {
+    "adr-agreement-mcp-server": "src/index.js"
+  },
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "adr",
+    "dangerous-goods",
+    "hazmat",
+    "mcp",
+    "model-context-protocol",
+    "logistics"
+  ],
+  "author": "Damian Kociemba",
+  "license": "AGPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kociembadamian/adr-agreement-mcp-server.git"
+  },
+  "homepage": "https://mcp.kocie.mba",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "dotenv": "^17.4.2",
+    "zod": "^4.5.4"
+  }
+}
