@@ -4,6 +4,8 @@ An [MCP](https://modelcontextprotocol.io) (Model Context Protocol) server that c
 
 Open source project, licensed under AGPL-3.0.
 
+**POLSKI - [PRZEJDŹ TUTAJ](README.md)**
+
 ## How it works
 
 1. **Data** — the tools fetch current data from [api.kocie.mba](https://api.kocie.mba) (Table A of the ADR Agreement and all related information: LQ/EQ, tank codes, special provisions, Kemler numbers, etc.).
